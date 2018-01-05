@@ -1,59 +1,43 @@
-<Team Name (without word "team")>
-<Member Bubbles>
-<Member Buttercup>
-<Member Blossom>
-pd <pd#>
+Panda
+Tim Marder
+Ryan Kim
+Sean Roudnitsky
+pd 2
 ---------------------
-<Project>
-
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-USAGE:
-* Replace all fields, angle brackets included, with specified info.
-  eg, pd <pd#> --> pd 3
-* Delete these instructions once all teammates understand usage.
-  (from tilde bar above to tilde bar below)
-
-devlog--
-Use keyboard shortcut to jump to end,
- replicate entry template,
- modify appropriately.
-
-zone of reflection--
-Flesh out each category whenever necessary, appropriate.
- Need not be fully filled in until end of project,
- but best done as you go along.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+Pandamonium Football
 
 
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<Wow, we so BOSS bc...>
+- It was really hard to think ahead about the things
+that we are going to code for the UML diagram, but
+that is where keys to success came into place and
+helped with planning.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
->
+~ so far none :3 ~
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<wow! oo! etc!...>
+- Its much more fun working on a project if the topic
+interests you a lot.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We changed ___ to ___ bc...
-<etc>
-<etc>
+- We changed the way we thought that heirchies were going
+to work in this program. After thinking what would be the
+easiest way to code the program, we changed up which classes
+we think will extend other classes.
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<tales of wisdom gained...>
+- Trying to jump straight into writing an organized UML
+without first making a messy plan on a key to success is
+really hard.
+
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -70,9 +54,16 @@ LESSONS LEARNED
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
-yyyy-mm-dd
+2018-01-01
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Tim Marder :: Contributed to making the proposal.
+Ryan Kim :: Contributed to making the proposal.
+Sean Roudnitsky :: Contributed to making the proposal.
+==============================================================
+
+2018-01-04
+--------------------------------------------------------------
+Tim Marder :: Created UML Diagram, contributed to revised proposal, helped with devlog.
+Ryan Kim :: Did revised proposal.
+Sean Roudnitsky :: Helped with devlog.
 ==============================================================
