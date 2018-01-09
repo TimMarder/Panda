@@ -67,3 +67,13 @@ Tim Marder :: Created UML Diagram, contributed to revised proposal, helped with 
 Ryan Kim :: Did revised proposal.
 Sean Roudnitsky :: Helped with devlog.
 ==============================================================
+
+2018-01-08
+--------------------------------------------------------------
+Tim Marder :: Worked on Football.java, OffensivePlayers.java, Players.java.
+	      Finished Quaterback.java, Receiver.java, Runningback.java.
+	      Updated devlog.
+Ryan Kim :: Worked on Football.java, OffensivePlayers.java, Players.java.
+	    Finished Quaterback.java, Receiver.java, Runningback.java.
+Sean Roudnitsky ::
+==============================================================
