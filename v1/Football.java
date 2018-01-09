@@ -4,7 +4,7 @@ import cs1.Keyboard;
 public class Football {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
-    public String userName;  //the name of the user but will display as “Coach <name>”.
+    public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
     public String[][] menuBoard = new String[2][2]; //the coach’s dashboard for managing the team.
 
