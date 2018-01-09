@@ -18,10 +18,6 @@ public class Players{
     public void showStats() {
 	//System.out.println(Players);
     }
-
-    public String toString() {
-
-    }
     
     public static void main( String[] args ) {
 
