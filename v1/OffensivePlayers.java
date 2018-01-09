@@ -1,4 +1,4 @@
-public class OffensivePlayers {
+public class OffensivePlayers extends Players {
 
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public String[] yourOffensivePlayers;      //the offensive players you own
@@ -6,7 +6,7 @@ public class OffensivePlayers {
     
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public OffensivePlayers() {
-
+	
     }
     
     //~~~~~~~~METHODS~~~~~~~~
