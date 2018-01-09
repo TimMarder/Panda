@@ -1,8 +1,10 @@
-public class Players {
+public class Players{
 
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public int playerRating;   //the overall rating of the player
-    public Objects[][] playerStats; //2D array holds player stats
+    //public Objects[][] playerStats; //2D array holds player stats
+
+    
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Players() {
 
@@ -13,8 +15,8 @@ public class Players {
 	playerRating = rating;
     }
 
-    public voic showStats() {
-	System.out.println(Players);
+    public void showStats() {
+	//System.out.println(Players);
     }
 
     public String toString() {

@@ -6,6 +6,7 @@ public class Football {
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
+    public int teamRating;
     //public String[][] menuBoard = new String[2][2]; //the coach’s dashboard for managing the team.
 
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
@@ -45,7 +46,7 @@ public class Football {
     }
 
     public void setupTeam() {
-	System.out.println("\nCoach " + userName + ", What team are you coaching this season? (Giants Eagles Patriots Steelers Falcons)\n");
+	System.out.println("\nCoach " + userName + ", What team are you coaching this season? (Giants Eagles Browns Steelers Falcons)\n");
 	String name = Keyboard.readString();
 	if( name.equals("Giants") ) {
 	    System.out.println("\nYou chose the Giants. Type 'Yes' to confirm, 'No' to change team.\n");
@@ -81,8 +82,8 @@ public class Football {
 	    }
 	    return;
 	}
-	if( name.equals("Patriots") ) {
-	    System.out.println("\nYou chose the Patriots. Type 'Yes' to confirm, 'No' to change team.\n");
+	if( name.equals("Browns") ) {
+	    System.out.println("\nYou chose the Browns. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
 	    if( confirm.equals("Yes") ) {
 		setTeamName(name);
