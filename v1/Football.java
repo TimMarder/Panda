@@ -4,19 +4,19 @@ import cs1.Keyboard;
 public class Football {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
-    public String userName;  //the name of the user but will display as “Coach <name>”.
+    public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
-    public String[][] menuBoard = new String[2][2]; //the coach’s dashboard for managing the team.
+    //public String[][] menuBoard = new String[2][2]; //the coach’s dashboard for managing the team.
 
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Football() {
-	menuBoard[0][0] = "NAME: ";
-	menuBoard[1][0] = "TEAM: ";
+	//menuBoard[0][0] = "NAME: ";
+	//menuBoard[1][0] = "TEAM: ";
     }
     //~~~~~~~~METHODS~~~~~~~~
     public void setUserName( String name ) {
 	userName = name;
-	menuBoard[0][1] = userName;
+	//menuBoard[0][1] = userName;
     }
     
     public void setupUser() {
@@ -41,7 +41,7 @@ public class Football {
 
     public void setTeamName( String name ) {
 	teamName = name;
-	menuBoard[1][1] = teamName;
+	//menuBoard[1][1] = teamName;
     }
 
     public void setupTeam() {
@@ -139,7 +139,7 @@ public class Football {
     }
 
     public String toString() {
-	String arr = "";
+	/*String arr = "";
 	for( int i = 0; i < menuBoard.length; i++ ) {
 	    arr += "| ";
 	    for( int j = 0; j < menuBoard.length; j++ ) {
@@ -147,17 +147,28 @@ public class Football {
 	    }
 	    arr += "|\n";
 	}
-	return arr;
+	return arr; */
+		String menu = "";
+		menu += "===========[" + teamName + "]=========== \n";
+		menu += "Coach " + userName + "'s Dashboard \n";
+		menu += "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n";
+		menu += "[1] List players & view stats \n";
+		menu += "[2] View team budget \n";
+		menu += "[3] Shop for Equipment \n";
+		menu += "[4] Draft Players \n";
+		menu += "[5] Play a game \n";
+		menu += "=============================== \n";
+		return menu;
     }
     
     public static void main( String[] args ) {
-	Football Coach1 = new Football();
+	Football Coach = new Football();
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	Coach1.setupUser();
+	Coach.setupUser();
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	Coach1.setupTeam();
+	Coach.setupTeam();
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	System.out.println(Coach1);
+	System.out.println(Coach);
     }
     
 }
