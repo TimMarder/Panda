@@ -29,8 +29,72 @@ public class Players {
 
     }
 
-    public void setTeam( String team ) {
+    public void setDefaultTeam( String team ) {
+	if( team.equals("Giants") ) {
+	    setQB( EliManning );
+	    setWR1( OdellBeckham );
+	    setWR2( SterlingShepard );
+	    setWR3( BrandonMarshall );
+	    setRB( OrleansDarkwa );
+	    setLB1( JonathanCasillas );
+	    setLB2( CurtisGrant );
+	    setCB1( EliApple );
+	    setCB2( DarrylMorris );
+	    setSS( CooperTaylor );
+	}
+    }
+	if( team.equals("Eagles") ) {
+	    setQB( CarsonWentz );
+	    setWR1( AlshonJeffery );
+	    setWR2( NelsoNAgolor );
+	    setWR3( MackHollins );
+	    setRB( JayAjayi );
+	    setLB1( JoeWalker );
+	    setLB2( MychalKendricks );
+	    setCB1( PatrickRobinson );
+	    setCB2( NolanCarroll );
+	    setSS( MalcolmJenkins );
+	}
+	if( team.equals("Browns") ) {
+	    setQB( CodyKessler );
+	    setWR1( JoshGordon );
+	    setWR2( CoreyColeman );
+	    setWR3( KasenWilliams );
+	    setRB( IsaiahCrowell );
+	    setLB1( JamieCollins );
+	    setLB2( JoeSchobert );
+	    setCB1( JoeHaden );
+	    setCB2( JasonMccourty );
+	    setSS( DonteWhitner );
+	}
+	if( team.equals("Steelers") ) {
+	    setQB( BenRoethlisberger );
+	    setWR1( AntonioBrown );
+	    setWR2( JujuSmith );
+	    setWR3( EliRogers );
+	    setRB( LeveonBell );
+	    setLB1( RyanShazier );
+	    setLB2( TJWatt );
+	    setCB1( WilliamGay );
+	    setCB2( IkeTaylor );
+	    setSS( MikeMitchell );
+	}
+	if( team.equals("Falcons") ) {
+	    setQB( MattRyan );
+	    setWR1( JulioJones );
+	    setWR2( MohamedSanu );
+	    setWR3(TaylorGabriel );
+	    setRB( DevontaFreeman );
+	    setLB1( DieonJones );
+	    setLB2( DukeRiley );
+	    setCB1( DesmondTrufant );
+	    setCB2( RobertMcclain );
+	    setSS( WilliamMoore );
+	}
+	else {
 
+	}
+	
     }
     
     public void setQB( Quarterback qb ) {
