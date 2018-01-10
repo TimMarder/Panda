@@ -15,73 +15,86 @@ public class DefensivePlayers extends Players {
     public static void main( String[] args ) {
         // === [ Linebackers ] ===
         Linebacker JonathanCasillas = new Linebacker("Jonathan Casillas");
-        // JonathanCasillas.setStats();
+        JonathanCasillas.setStats( 59, 68, 72 , 82 , 69 );
         Linebacker CurtisGrant = new Linebacker("Curtis Grant");
-        // CurtisGrant.setStats();
+        CurtisGrant.setStats();
 
         Linebacker JoeWalker = new Linebacker("Joe Walker");
-        // JoeWalker.setStats();
+        JoeWalker.setStats();
         Linebacker MychalKendricks = new Linebacker("Mychal Kendricks");
-        // MychalKendricks.setStats();
-
+        MychalKendricks.setStats();
         Linebacker JamieCollins = new Linebacker("Jamie Collins");
-        // JamieCollins.setStats();
+        JamieCollins.setStats();
         Linebacker JoeSchobert = new Linebacker("Joe Schobert");
-        // JoeSchobert.setStats();
+        JoeSchobert.setStats();
 
         Linebacker RyanShazier = new Linebacker("Ryan Shazier");
-        // RyanShazier.setStats();
+        RyanShazier.setStats();
         Linebacker TJWatt = new Linebacker("T.J. Watt");
-        // TJWatt.setStats();
+        TJWatt.setStats();
 
         Linebacker DeionJones = new Linebacker("Deion Jones");
-        // DeionJones.setStats();
+        DeionJones.setStats();
         Linebacker DukeRiley = new Linebacker("Duke Riley");
-        // DukeRiley.setStats();
+        DukeRiley.setStats();
 
+	Linebacker LukeKuechly = new Linebacker("Luke Kuechly");
+	LukeKuechly.setStats();
+	
+	Linebacker RayLewis = new Linebacker("Ray _Lewis");
+	Raylewis.setStats();
 
         // === [ Cornerbacks ] ===
         Cornerback EliApple = new Cornerback("Eli Apple");
-        // EliApple.setStats();
+        EliApple.setStats();
         Cornerback DarrylMorris = new Cornerback("Darryl Morris");
-        // DarrylMorris.setStats();
+        DarrylMorris.setStats();
 
         Cornerback PatrickRobinson = new Cornerback("Patrick Robinson");
-        // PatrickRobinson.setStats();
+        PatrickRobinson.setStats();
         Cornerback NolanCarroll = new Cornerback("Nolan Carroll");
-        // NolanCarroll.setStats();
+        NolanCarroll.setStats();
 
         Cornerback JoeHaden = new Cornerback("Joe Haden");
-        // JoeHaden.setStats();
+        JoeHaden.setStats();
         Cornerback JasonMccourty = new Cornerback("Jason McCourty");
-        // JasonMccourty.setStats();
+        JasonMccourty.setStats();
 
         Cornerback WilliamGay = new Cornerback("William Gay");
-        // WilliamGay.setStats();
+        WilliamGay.setStats();
         Cornerback IkeTaylor = new Cornerback("Ike Taylor");
-        // IkeTaylor.setStats();
+        IkeTaylor.setStats();
 
         Cornerback DesmondTrufant = new Cornerback("Desmond Trufant");
-        // DesmondTrufant.setStats(); 
+        DesmondTrufant.setStats(); 
         Cornerback RobertMcclain = new Cornerback("Robert McClain");
-        // RobertMcclain.setStats();
+        RobertMcclain.setStats();
+
+	Cornerback RichardSherman = new Cornerback("Richard Sherman");
+	RichardSherman.setStats();
+	Cornerback PatrickPeterson = new Cornerback("Patrick Peterson");
+	PatrickPeterson.setStats();
 
 
         // === [ Safeties ] ===
         Safety CooperTaylor = new Safety("Cooper Taylor");
-        // CooperTaylor.setStats();
+        CooperTaylor.setStats();
 
         Safety MalcolmJenkins = new Safety("Malcolm Jenkins");
-        // MalcolmJenkins.setStats();
+        MalcolmJenkins.setStats();
 
         Safety DonteWhitner = new Safety("Donte Whitner");
-        // DonteWhitner.setStats();
+        DonteWhitner.setStats();
 
         Safety MikeMitchell = new Safety("Mike Mitchell");
-        // MikeMitchell.setStats();
+        MikeMitchell.setStats();
 
         Safety WilliamMoore = new Safety("William Moore");
-        // WilliamMoore.setStats(); 
+        WilliamMoore.setStats(); 
 
+	Safety EarlThomas  = new Safety("Earl Thomas");
+	EarlThomas.setStats();
+	Safety KamChancellor = new Safety("Cam Chancellor");
+	KamChancellor.setStats();
     }
 }
