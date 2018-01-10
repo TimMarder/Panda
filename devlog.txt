@@ -77,3 +77,14 @@ Ryan Kim :: Worked on Football.java, OffensivePlayers.java, Players.java.
 	    Finished Quaterback.java, Receiver.java, Runningback.java.
 Sean Roudnitsky ::
 ==============================================================
+
+2018-01-09
+--------------------------------------------------------------
+Tim Marder :: Finished Runningback.java.
+              Made and worked on DefensivePlayers.java, Safety.java,
+	      Linebacker.java, Cornerback.java.
+	      Created todo.txt.
+Ryan Kim :: Fixed problems with OffensivePlayers.
+	    Made and worked onRunningback.java
+Sean Roudnitsky :: Made revised UML.
+==============================================================
