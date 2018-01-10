@@ -43,8 +43,6 @@ public class Quarterback extends OffensivePlayers {
     }
 
     public static void main(String[] args) {
-	//Quarterback EliManning = new Quarterback("Eli Manning");
-        //EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
 
     }
 

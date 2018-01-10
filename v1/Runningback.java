@@ -5,17 +5,16 @@ public class Runningback {
 	public int speed;
 	public int strength;
 	public int explosiveness;
-	public String name;
 
 	public Runningback(String rbname) {
-		name = rbname;
+		super(rbname);
 	}
 
 	public void setStats(int agile,
-						 int aware,
-						 int spd,
-						 int strong,
-						 int explode) {
+			 int aware,
+			 int spd,
+			 int strong,
+			 int explode) {
 		setAgility(agile);
 		setAwareness(aware);
 		setSpeed(spd);
