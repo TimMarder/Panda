@@ -26,12 +26,12 @@ public class Football {
 	System.out.println("\nCoach " + name + ", Is that right?");
 	System.out.println("\nType 'Yes' to confirm, 'No' to change name.\n");
 	String confirm = Keyboard.readString();
-	if( confirm.equals("Yes") ) {
+	if( confirm.equalsIgnoreCase("Yes") ) {
 	    setUserName(name);
 	    System.out.println("\nWelcome Coach " + name + "!");
 	    return;
 	}
-	if( confirm.equals("No") ) {
+	if( confirm.equalsIgnoreCase("No") ) {
 	    setupUser();
 	}
 	else {
@@ -48,15 +48,15 @@ public class Football {
     public void setupTeam() {
 	System.out.println("\nCoach " + userName + ", What team are you coaching this season? (Giants Eagles Browns Steelers Falcons)\n");
 	String name = Keyboard.readString();
-	if( name.equals("Giants") ) {
+	if( name.equalsIgnoreCase("Giants") ) {
 	    System.out.println("\nYou chose the Giants. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
-	    if( confirm.equals("Yes") ) {
+	    if( confirm.equalsIgnoreCase("Yes") ) {
 		setTeamName(name);
 		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
 		return;
 	    }
-	    if( confirm.equals("No") ) {
+	    if( confirm.equalsIgnoreCase("No") ) {
 		setupTeam();
 	    }
 	    else {
@@ -65,15 +65,15 @@ public class Football {
 	    }
 	    return;
 	}
-	if( name.equals("Eagles") ) {
+	if( name.equalsIgnoreCase("Eagles") ) {
 	    System.out.println("\nYou chose the Eagles. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
-	    if( confirm.equals("Yes") ) {
+	    if( confirm.equalsIgnoreCase("Yes") ) {
 		setTeamName(name);
 		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
 		return;
 	    }
-	    if( confirm.equals("No") ) {
+	    if( confirm.equalsIgnoreCase("No") ) {
 		setupTeam();
 	    }
 	    else {
@@ -82,15 +82,15 @@ public class Football {
 	    }
 	    return;
 	}
-	if( name.equals("Browns") ) {
+	if( name.equalsIgnoreCase("Browns") ) {
 	    System.out.println("\nYou chose the Browns. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
-	    if( confirm.equals("Yes") ) {
+	    if( confirm.equalsIgnoreCase("Yes") ) {
 		setTeamName(name);
 		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
 		return;
 	    }
-	    if( confirm.equals("No") ) {
+	    if( confirm.equalsIgnoreCase("No") ) {
 		setupTeam();
 	    }
 	    else {
@@ -99,15 +99,15 @@ public class Football {
 	    }
 	    return;
 	}
-	if( name.equals("Steelers") ) {
+	if( name.equalsIgnoreCase("Steelers") ) {
 	    System.out.println("\nYou chose the Steelers. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
-	    if( confirm.equals("Yes") ) {
+	    if( confirm.equalsIgnoreCase("Yes") ) {
 		setTeamName(name);
 		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
 		return;
 	    }
-	    if( confirm.equals("No") ) {
+	    if( confirm.equalsIgnoreCase("No") ) {
 		setupTeam();
 	    }
 	    else {
@@ -116,15 +116,15 @@ public class Football {
 	    }
 	    return;
 	}
-	if( name.equals("Falcons") ) {
+	if( name.equalsIgnoreCase("Falcons") ) {
 	    System.out.println("\nYou chose the Falcons. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
-	    if( confirm.equals("Yes") ) {
+	    if( confirm.equalsIgnoreCase("Yes") ) {
 		setTeamName(name);
 		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
 		return;
 	    }
-	    if( confirm.equals("No") ) {
+	    if( confirm.equalsIgnoreCase("No") ) {
 		setupTeam();
 	    }
 	    else {

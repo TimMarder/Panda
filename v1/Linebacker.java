@@ -11,7 +11,7 @@ public class Linebacker extends DefensivePlayers {
 	}
 
 	public void setStats(int agile,
-			 int aware,
+			     int aware,
 			 int spd,
 			 int strong,
 			 int tackle) {
