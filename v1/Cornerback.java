@@ -6,9 +6,13 @@ public class Cornerback extends DefensivePlayers {
 	public int coverage;
 	public int tackling;
 
-	public Cornerback(String cbname) {
-		super(cbname);
-	}
+    public Cornerback(String cbname) {
+	super(cbname);
+    }
+    
+    public Cornerback(String cbname , String cbteam) {
+	super(cbname, cbteam);
+    }
 
 	public void setStats(int agile,
 			 int aware,

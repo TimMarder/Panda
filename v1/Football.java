@@ -7,6 +7,7 @@ public class Football {
     public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
     public int teamRating;
+    public int week;
     //public String[][] menuBoard = new String[2][2]; //the coach’s dashboard for managing the team.
 
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
@@ -139,27 +140,78 @@ public class Football {
 	}
     }
 
+    public void setWeek(int i) {
+	week = i;
+    }
+
     public String toString() {
-	/*String arr = "";
-	for( int i = 0; i < menuBoard.length; i++ ) {
-	    arr += "| ";
-	    for( int j = 0; j < menuBoard.length; j++ ) {
-		arr += menuBoard[i][j] + " ";
-	    }
-	    arr += "|\n";
-	}
-	return arr; */
 		String menu = "";
 		menu += "===========[" + teamName + "]=========== \n";
 		menu += "Coach " + userName + "'s Dashboard \n";
+		menu += "Week " + week + " \n";
 		menu += "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n";
-		menu += "[1] List players & view stats \n";
-		menu += "[2] View team budget \n";
-		menu += "[3] Shop for Equipment \n";
-		menu += "[4] Draft Players \n";
-		menu += "[5] Play a game \n";
+		menu += "[1] Team stats \n";
+		menu += "[2] Team budget \n";
+		menu += "[3] Equipment \n";
+		menu += "[4] Players \n";
+		menu += "[5] Game On! \n";
 		menu += "=============================== \n";
 		return menu;
+    }
+
+    public void dashboard() {
+	String call = Keyboard.readString();
+	if( call.equals("1") ) {
+	    dashboard1();
+	    return;
+	}
+	if( call.equals("2") ) {
+	    dashboard2();
+	    return;
+	}
+	if( call.equals("3") ) {
+	    dashboard3();
+	    return;
+	}
+	if( call.equals("4") ) {
+	    dashboard4();
+	    return;
+	}
+	if( call.equals("5") ) {
+	    dashboard5();
+	    return;
+	}
+	else {
+	    System.out.println("\nInvalid choice\n");
+	    this.toString();
+	}
+	
+    }
+
+    public void dashboard1() { //List Players, View Stats
+	
+    }
+    
+    public void dashboard2() { //View Budget, View Payroll
+
+    }
+    
+    public void dashboard3() { //Buy Gear, Equip Gear
+	
+    }
+    
+    public void dashboard4() { //Draft Players, Team Roster
+	
+    }
+    
+    public void dashboard5() { //Play Game!!
+	playGame();
+	    
+    }
+
+    public void playGame() {
+	week++;
+	
     }
     
     public static void main( String[] args ) {
@@ -169,7 +221,8 @@ public class Football {
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	Coach.setupTeam();
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	System.out.println(Coach);
+	System.out.println(Coach); //Week 1
+	Coach.dashboard(); 
     }
     
 }

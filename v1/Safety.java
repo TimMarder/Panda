@@ -6,10 +6,14 @@ public class Safety extends DefensivePlayers {
 	public int coverage;
 	public int tackling;
 
-	public Safety(String ssname) {
-		super(ssname);
-	}
-
+    public Safety(String ssname) {
+	super(ssname);
+    }
+    
+    public Safety(String ssname , String ssteam) {
+	super(ssname, ssteam);
+    }
+    
 	public void setStats(int hands,
 			 int aware,
 			 int spd,

@@ -6,9 +6,13 @@ public class Linebacker extends DefensivePlayers {
 	public int strength;
 	public int tackling;
 
-	public Linebacker(String lbname) {
-		super(lbname);
-	}
+    public Linebacker(String lbname) {
+	super(lbname);
+    }
+
+    public Linebacker(String lbname , String lbteam) {
+	super(lbname, lbteam);
+    }
 
 	public void setStats(int agile,
 			     int aware,

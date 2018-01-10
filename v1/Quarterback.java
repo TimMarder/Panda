@@ -9,6 +9,10 @@ public class Quarterback extends OffensivePlayers {
     public Quarterback(String qbname) {
 	   super(qbname);
     }
+
+    public Quarterback(String qbname , String qbteam) {
+	super(qbname, qbteam);
+    }
     
     public void setStats(int agile,
 			 int aware,

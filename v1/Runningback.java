@@ -5,11 +5,15 @@ public class Runningback extends OffensivePlayers {
 	public int speed;
 	public int strength;
 	public int explosiveness;
-
-	public Runningback(String rbname) {
-		super(rbname);
-	}
-
+    
+    public Runningback(String rbname) {
+	super(rbname);
+    }
+    
+    public Runningback(String rbname , String rbteam) {
+	super(rbname, rbteam);
+    }
+    
 	public void setStats(int agile,
 			 int aware,
 			 int spd,

@@ -10,6 +10,10 @@ public class Receiver extends OffensivePlayers{
 	   super(wrname);
     }
 
+    public Receiver(String wrname , String wrteam) {
+	super(wrname, wrteam);
+    }
+
     public void setStats(int agile,
 			 int aware,
 			 int spd,
