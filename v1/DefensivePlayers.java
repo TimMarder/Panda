@@ -17,29 +17,30 @@ public class DefensivePlayers extends Players {
         Linebacker JonathanCasillas = new Linebacker("Jonathan Casillas");
         JonathanCasillas.setStats( 59, 68, 72 , 82 , 69 );
         Linebacker CurtisGrant = new Linebacker("Curtis Grant");
-        CurtisGrant.setStats();
+        CurtisGrant.setStats( 63 , 66 , 74 , 79 , 68 );
 
         Linebacker JoeWalker = new Linebacker("Joe Walker");
-        JoeWalker.setStats();
+        JoeWalker.setStats( 61 , 69 , 70 , 84 , 66 );
         Linebacker MychalKendricks = new Linebacker("Mychal Kendricks");
-        MychalKendricks.setStats();
+        MychalKendricks.setStats( 66 , 62 , 80 , 82 , 60 );
+	
         Linebacker JamieCollins = new Linebacker("Jamie Collins");
-        JamieCollins.setStats();
+        JamieCollins.setStats( 69 , 61 , 72 , 80 , 68 );
         Linebacker JoeSchobert = new Linebacker("Joe Schobert");
-        JoeSchobert.setStats();
+        JoeSchobert.setStats( 71 , 79 , 80 , 94 , 76 );
 
         Linebacker RyanShazier = new Linebacker("Ryan Shazier");
-        RyanShazier.setStats();
+        RyanShazier.setStats( 84 , 87 , 96 , 93 , 90 );
         Linebacker TJWatt = new Linebacker("T.J. Watt");
-        TJWatt.setStats();
+        TJWatt.setStats( 67 , 69 , 70 , 73 , 71 );
 
         Linebacker DeionJones = new Linebacker("Deion Jones");
-        DeionJones.setStats();
+        DeionJones.setStats( 65 , 71 , 75 , 68 , 71 );
         Linebacker DukeRiley = new Linebacker("Duke Riley");
-        DukeRiley.setStats();
+        DukeRiley.setStats( 69 , 70 , 73 , 69 , 69 );
 
 	Linebacker LukeKuechly = new Linebacker("Luke Kuechly");
-	LukeKuechly.setStats();
+	LukeKuechly.setStats( 61 , 69 , 75 , 72 , 73);
 	
 	Linebacker RayLewis = new Linebacker("Ray _Lewis");
 	Raylewis.setStats();
