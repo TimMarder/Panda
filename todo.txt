@@ -1,0 +1,11 @@
+Team Panda Plan of action:
+
+By 1/11/2018 --> Finish classes OffensivePlayers and DefensivePlayers
+
+By 1/12/2018 --> Finish classes Players and Shop, Helmet, Pads, Cleats
+
+By 1/15/2018 --> Finish class Game
+
+By 1/18/2018 --> Finish classes Offense, Defense, and Special Teams
+
+By 1/19/2018 --> Anything needed to wrap up and fix; debug.

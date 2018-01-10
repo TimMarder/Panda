@@ -16,14 +16,19 @@ public class OffensivePlayers extends Players {
         // === [ Quarterbacks ] ===
         Quarterback EliManning = new Quarterback("Eli Manning");
         EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
+
         Quarterback CarsonWentz = new Quarterback("Carson Wentz");
         CarsonWentz.setStats( 63 , 66 , 74 , 79 , 68 );
+
         Quarterback CodyKessler = new Quarterback("Cody Kessler");
         CodyKessler.setStats( 61 , 69 , 70 , 84 , 66 );
+
         Quarterback BenRoethlisberger = new Quarterback("Ben Roethlisberger");
         BenRoethlisberger.setStats( 66 , 62 , 80 , 82 , 60 );
+
         Quarterback MattRyan = new Quarterback("Matt Ryan");
         MattRyan.setStats( 69 , 61 , 72 , 80 , 68 );
+
         Quarterback MichaelVick = new Quarterback("Michael Vick");
         MichaelVick.setStats( 71 , 79 , 80 , 94 , 76 );
         Quarterback TomBrady = new Quarterback("Tom Brady");
@@ -64,43 +69,33 @@ public class OffensivePlayers extends Players {
         MohamedSanu.setStats( 70 , 69 , 72 , 69 , 70 );
         Receiver TaylorGabriel = new Receiver("Taylor Gabriel");
         TaylorGabriel.setStats( 68 , 70 , 71 , 74 , 67 );
+
+        Receiver MikeEvans = new Receiver("Mike Evans");
+        MikeEvans.setStats( 98 , 86 , 89 , 92 , 85 );
+        Receiver DeseanJackson = new Receiver("DeSean Jackson");
+        DeseanJackson.setStats( 90 , 89 , 92 , 89 , 90 );
+        Receiver DezBryant = new Receiver("Dez Bryant");
+        DezBryant.setStats( 88 , 90 , 91 , 94 , 87 );
         
         // === [ Runningbacks ] ===
         Runningback OrleansDarkwa = new Runningback("Orleans Darkwa");
         OrleansDarkwa.setStats( 72 , 66 , 77 , 71 , 64 );
-        Runningback WayneGallman = new Runningback("Wayne Gallman");
-        WayneGallman.setStats( 70 , 67 , 75 , 70 , 68 );
-        Runningback PaulPerkins = new Runningback("Paul Perkins");
-        PaulPerkins.setStats( 74 , 70 , 77 , 69 , 60 );
         
         Runningback JayAjayi = new Runningback("Jay Ajayi");
         JayAjayi.setStats( 68 , 72 , 73 , 70 , 67 );
-        Runningback LeGarretteBlount = new Runningback("LeGarrette Blount");
-        LeGarretteBlount.setStats( 76 , 70 , 67 , 68 , 67 );
-        Runningback CoreyClement = new Runningback("Corey Clement");
-        CoreyClement.setStats( 71 , 68 , 73 , 71 , 67 );
         
         Runningback IsaiahCrowell = new Runningback("Isaiah Crowell");
         IsaiahCrowell.setStats( 71 , 73 , 70 , 69 , 67 );
-        Runningback DukeJohnson = new Runningback("Duke Johnson");
-        DukeJohnson.setStats( 71 , 68 , 75 , 71 , 65 );
-        Runningback MatthewDayes = new Runningback("Matthew Dayes");
-        MatthewDayes.setStats( 69 , 68 , 71 , 72 , 70 );
         
-        Runningback LeVeonBell = new Runningback("Le'Veon Bell");
-        LeVeonBell.setStats( 66 , 68 , 73 , 74 , 69 );
-        Runningback JamesConner = new Runningback("James Conner");
-        JamesConner.setStats( 70 , 73 , 69 , 67 , 71 );
-        Runningback FitzgeraldToussaint = new Runningback("Fitzgerald Toussaint");
-        FitzgeraldToussaint.setStats( 91 , 65 , 63 , 62 , 69 );
-        
+        Runningback LeveonBell = new Runningback("Leveon Bell");
+        LeveonBell.setStats( 66 , 68 , 73 , 74 , 69 );
+
         Runningback DevontaFreeman = new Runningback("Devonta Freeman");
         DevontaFreeman.setStats( 70 , 72 , 74 , 68 , 66 );
-        Runningback TevinColeman = new Runningback("Tevin Coleman");
-        TevinColeman.setStats( 70 , 70 , 60 , 75 , 75 );
-        Runningback TerronWard = new Runningback("Terron Ward");
-        TerronWard.setStats( 66 , 72 , 71 , 70 , 71 );
         
+        Runningback MattForte = new Runningback("Matt Forte");
+        MattForte.setStats( 80 , 82 , 84 , 78 , 76 );
+        Runningback ToddGurley = new Runningback("Todd Gurley");
+        ToddGurley.setStats( 99 , 82 , 95 , 89 , 85 );
     }
-    
 }

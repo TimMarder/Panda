@@ -1,25 +1,25 @@
-public class Runningback extends OffensivePlayers {
+public class Linebacker extends DefensivePlayers {
 
 	public int agility;
 	public int awareness;
 	public int speed;
 	public int strength;
-	public int explosiveness;
+	public int tackling;
 
-	public Runningback(String rbname) {
-		super(rbname);
+	public Linebacker(String lbname) {
+		super(lbname);
 	}
 
 	public void setStats(int agile,
 			 int aware,
 			 int spd,
 			 int strong,
-			 int explode) {
+			 int tackle) {
 		setAgility(agile);
 		setAwareness(aware);
 		setSpeed(spd);
 		setStrength(strong);
-		setExplosiveness(explode);
+		setTackling(tackle);
 	}
     
 	public void setAgility(int agile) {
@@ -38,8 +38,8 @@ public class Runningback extends OffensivePlayers {
 		strength = strong;
 	}
 
-	public void setExplosiveness(int explode) {
-		explosiveness = explode;
+	public void setTackling(int tackle) {
+		tackling = tackle;
 	}
 
 	public static void main(String[] args) {

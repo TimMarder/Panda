@@ -7,7 +7,7 @@ public class Receiver extends OffensivePlayers{
     public int catching;
 
     public Receiver(String wrname) {
-	super(wrname);
+	   super(wrname);
     }
 
     public void setStats(int agile,
@@ -23,23 +23,23 @@ public class Receiver extends OffensivePlayers{
     }
     
     public void setAgility(int agile) {
-	agility = agile; 
+	   agility = agile; 
     }
 
     public void setAwareness(int aware) {
-	awareness = aware;
+	   awareness = aware;
     }
 
     public void setSpeed(int spd) {
-	speed = spd;
+	   speed = spd;
     }
 
     public void setVertical(int vert) {
-	vertical = vert;
+	   vertical = vert;
     }
 
     public void setCatching(int hands) {
-	catching = hands;
+	   catching = hands;
     }
 
     public static void main(String[] args) {
