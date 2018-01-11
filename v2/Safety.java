@@ -14,6 +14,14 @@ public class Safety extends DefensivePlayers {
 	super(ssname, ssteam);
     }
     
+    public void setStats() {
+    	setCatching(70);
+    	setAwareness(70);
+    	setSpeed(70);
+    	setCoverage(70);
+    	setTackling(70);
+    }
+    
 	public void setStats(int hands,
 			 int aware,
 			 int spd,

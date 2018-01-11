@@ -14,6 +14,14 @@ public class Quarterback extends OffensivePlayers {
 	super(qbname, qbteam);
     }
     
+    public void setStats() {
+    	setAgility(70);
+    	setAwareness(70);
+    	setArmPower(70);
+    	setAccuracy(70);
+    	setIntelligence(70);
+    }
+    
     public void setStats(int agile,
 			 int aware,
 			 int arm,

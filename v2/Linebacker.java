@@ -14,6 +14,14 @@ public class Linebacker extends DefensivePlayers {
 	super(lbname, lbteam);
     }
 
+    public void setStats() {
+    	setAgility(70);
+    	setAwareness(70);
+    	setSpeed(70);
+    	setStrength(70);
+    	setTackling(70);
+    }
+    
 	public void setStats(int agile,
 			     		 int aware,
 			 int spd,

@@ -14,6 +14,14 @@ public class Cornerback extends DefensivePlayers {
 	super(cbname, cbteam);
     }
 
+    public void setStats() {
+    	setAgility(70);
+    	setAwareness(70);
+    	setSpeed(70);
+    	setCoverage(70);
+    	setTackling(70);
+    }
+    
 	public void setStats(int agile,
 			 int aware,
 			 int spd,

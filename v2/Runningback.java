@@ -14,6 +14,14 @@ public class Runningback extends OffensivePlayers {
 	super(rbname, rbteam);
     }
     
+    public void setStats() {
+    	setAgility(70);
+    	setAwareness(70);
+    	setSpeed(70);
+    	setStrength(70);
+    	setExplosiveness(70);
+    }
+    
 	public void setStats(int agile,
 			 int aware,
 			 int spd,
