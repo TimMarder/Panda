@@ -5,7 +5,6 @@ public class Players {
     
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Players() {
-	team = new Players[10];
     }
     
     //~~~~~~~~METHODS~~~~~~~~
@@ -17,7 +16,7 @@ public class Players {
 
     }
 
-    public void setDefaultTeam( String team,  ) {
+    public void setDefaultTeam( String team ) {
 	if( team.equals("Giants") ) {
 		Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
 	    EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
