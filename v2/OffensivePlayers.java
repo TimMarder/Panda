@@ -14,14 +14,18 @@ public class OffensivePlayers extends Players {
     
     public OffensivePlayers(String playerName, String playerTeam) {
         name = playerName;
-	team = playerTeam;
+        team = playerTeam;
     }
     //~~~~~~~~METHODS~~~~~~~~
 
+    //have all stats in a csv file
+    //import that
+    //parse it to get each 
+    
     public static void main( String[] args ) {
         // === [ Quarterbacks ] ===
-        Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
-        EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
+        Quarterback e = new Quarterback("Eli Manning", "Giants");
+        e.setStats( 59 , 68 , 72 , 82 , 69 );
 
         Quarterback CarsonWentz = new Quarterback("Carson Wentz", "Eagles");
         CarsonWentz.setStats( 63 , 66 , 74 , 79 , 68 );

@@ -2,18 +2,6 @@ public class Players {
 
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public int playerRating;   //the overall rating of the player
-    public Players[] team;
-    public Quarterback myQB;
-    public Receiver myWR1;
-    public Receiver myWR2;
-    public Receiver myWR3;
-    public Runningback myRB;
-    public Linebacker myLB1;
-    public Linebacker myLB2;
-    public Cornerback myCB1;
-    public Cornerback myCB2;
-    public Safety mySS;
-
     
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Players() {
@@ -29,8 +17,10 @@ public class Players {
 
     }
 
-    public void setDefaultTeam( String team ) {
+    public void setDefaultTeam( String team,  ) {
 	if( team.equals("Giants") ) {
+		Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
+	    EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
 	    setQB( EliManning );
 	    setWR1( OdellBeckham );
 	    setWR2( SterlingShepard );
@@ -42,8 +32,9 @@ public class Players {
 	    setCB2( DarrylMorris );
 	    setSS( CooperTaylor );
 	}
-    }
 	if( team.equals("Eagles") ) {
+        Quarterback CarsonWentz = new Quarterback("Carson Wentz", "Eagles");
+        CarsonWentz.setStats( 63 , 66 , 74 , 79 , 68 );
 	    setQB( CarsonWentz );
 	    setWR1( AlshonJeffery );
 	    setWR2( NelsoNAgolor );

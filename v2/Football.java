@@ -1,13 +1,22 @@
 //~~~~~~~~IMPORTS~~~~~~~~
 import cs1.Keyboard;
 
-public class Football {
+public class Team {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
     public int teamRating;
     public int week;
+    public Quarterback myQB;
+    public Receiver myWR1, myWR2, myWR3;
+    public Runningback myRB;
+    public Linebacker myLB1;
+    public Linebacker myLB2;
+    public Cornerback myCB1;
+    public Cornerback myCB2;
+    public Safety mySS;
+
     //public String[][] menuBoard = new String[2][2]; //the coach’s dashboard for managing the team.
 
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
@@ -226,3 +235,7 @@ public class Football {
     }
     
 }
+/* woo.java
+*   - main method <> dialogue
+*	<> make 5 teams
+*	
