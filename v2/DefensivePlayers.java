@@ -47,8 +47,8 @@ public class DefensivePlayers extends Players {
         Linebacker LukeKuechly = new Linebacker("Luke Kuechly");
         LukeKuechly.setStats( 61 , 69 , 75 , 72 , 73);
 	
-        Linebacker RayLewis = new Linebacker("Ray _Lewis");
-        Raylewis.setStats();
+        Linebacker RayLewis = new Linebacker("Ray Lewis");
+        RayLewis.setStats();
 
         // === [ Cornerbacks ] ===
         Cornerback EliApple = new Cornerback("Eli Apple", "Giants");
