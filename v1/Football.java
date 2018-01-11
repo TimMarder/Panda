@@ -53,7 +53,7 @@ public class Football {
 	    System.out.println("\nYou chose the Giants. Type 'Yes' to confirm, 'No' to change team.\n");
 	    String confirm = Keyboard.readString();
 	    if( confirm.equalsIgnoreCase("Yes") ) {
-		setTeamName(name);
+		setTeamName(name.toUpperCase());
 		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
 		return;
 	    }
@@ -146,16 +146,16 @@ public class Football {
 
     public String toString() {
 		String menu = "";
-		menu += "===========[" + teamName + "]=========== \n";
+		menu += "========[" + teamName + "]======== \n";
 		menu += "Coach " + userName + "'s Dashboard \n";
 		menu += "Week " + week + " \n";
-		menu += "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n";
+		menu += "~~~~~~~~~~~~~~~~~~~~\n";
 		menu += "[1] Team stats \n";
 		menu += "[2] Team budget \n";
 		menu += "[3] Equipment \n";
 		menu += "[4] Players \n";
 		menu += "[5] Game On! \n";
-		menu += "=============================== \n";
+		menu += "==================== \n";
 		return menu;
     }
 

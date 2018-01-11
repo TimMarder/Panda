@@ -44,11 +44,11 @@ public class DefensivePlayers extends Players {
         Linebacker DukeRiley = new Linebacker("Duke Riley", "Falcons");
         DukeRiley.setStats( 69 , 70 , 73 , 69 , 69 );
 
-	Linebacker LukeKuechly = new Linebacker("Luke Kuechly");
-	LukeKuechly.setStats( 61 , 69 , 75 , 72 , 73);
+        Linebacker LukeKuechly = new Linebacker("Luke Kuechly");
+        LukeKuechly.setStats( 61 , 69 , 75 , 72 , 73);
 	
-	Linebacker RayLewis = new Linebacker("Ray _Lewis");
-	Raylewis.setStats();
+        Linebacker RayLewis = new Linebacker("Ray _Lewis");
+        Raylewis.setStats();
 
         // === [ Cornerbacks ] ===
         Cornerback EliApple = new Cornerback("Eli Apple", "Giants");
@@ -76,10 +76,10 @@ public class DefensivePlayers extends Players {
         Cornerback RobertMcclain = new Cornerback("Robert McClain", "Falcons");
         RobertMcclain.setStats();
 
-	Cornerback RichardSherman = new Cornerback("Richard Sherman");
-	RichardSherman.setStats();
-	Cornerback PatrickPeterson = new Cornerback("Patrick Peterson");
-	PatrickPeterson.setStats();
+        Cornerback RichardSherman = new Cornerback("Richard Sherman");
+        RichardSherman.setStats();
+        Cornerback PatrickPeterson = new Cornerback("Patrick Peterson");
+        PatrickPeterson.setStats();
 
 
         // === [ Safeties ] ===
@@ -98,9 +98,9 @@ public class DefensivePlayers extends Players {
         Safety WilliamMoore = new Safety("William Moore");
         WilliamMoore.setStats(); 
 
-	Safety EarlThomas  = new Safety("Earl Thomas");
-	EarlThomas.setStats();
-	Safety KamChancellor = new Safety("Cam Chancellor");
-	KamChancellor.setStats();
+		Safety EarlThomas  = new Safety("Earl Thomas");
+		EarlThomas.setStats();
+		Safety KamChancellor = new Safety("Cam Chancellor");
+		KamChancellor.setStats();
     }
 }
