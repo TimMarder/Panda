@@ -88,3 +88,11 @@ Ryan Kim :: Fixed problems with OffensivePlayers.
 	    Made and worked onRunningback.java
 Sean Roudnitsky :: Made revised UML.
 ==============================================================
+
+2018-01-11
+--------------------------------------------------------------
+Tim Marder :: Worked on Offensiveplayers.java, Players.java,
+	      and Team.java.
+Ryan Kim :: Made woo.java, made Team.java, worked on Players.java	    
+Sean Roudnitsky ::
+==============================================================

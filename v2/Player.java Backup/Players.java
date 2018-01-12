@@ -1,18 +1,7 @@
-public class Players{
+public class Players {
 
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public int playerRating;   //the overall rating of the player
-    public static Quarterback myQB;
-    public Receiver myWR1;
-    public Receiver myWR2;
-    public Receiver myWR3;
-    public Runningback myRB;
-    public Linebacker myLB1;
-    public Linebacker myLB2;
-    public Cornerback myCB1;
-    public Cornerback myCB2;
-    public Safety mySS;
-    static Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
     
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Players() {
@@ -27,12 +16,12 @@ public class Players{
 
     }
 
-    public static void setDefaultTeam( String team ) {
+    public void setDefaultTeam( String team ) {
 	if( team.equals("Giants") ) {
-		//Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
-	    //EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
+		Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
+	    EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
 	    setQB( EliManning );
-	    /*setWR1( OdellBeckham );
+	    setWR1( OdellBeckham );
 	    setWR2( SterlingShepard );
 	    setWR3( BrandonMarshall );
 	    setRB( OrleansDarkwa );
@@ -40,9 +29,9 @@ public class Players{
 	    setLB2( CurtisGrant );
 	    setCB1( EliApple );
 	    setCB2( DarrylMorris );
-	    setSS( CooperTaylor );*/
+	    setSS( CooperTaylor );
 	}
-	/*if( team.equals("Eagles") ) {
+	if( team.equals("Eagles") ) {
         Quarterback CarsonWentz = new Quarterback("Carson Wentz", "Eagles");
         CarsonWentz.setStats( 63 , 66 , 74 , 79 , 68 );
 	    setQB( CarsonWentz );
@@ -90,20 +79,17 @@ public class Players{
 	    setLB2( DukeRiley );
 	    setCB1( DesmondTrufant );
 	    setCB2( RobertMcclain );
-	    setSS( WilliamMoore );*/
+	    setSS( WilliamMoore );
+	}
 	else {
 
 	}
 	
     }
     
-    public static void setQB( Quarterback qb ) {
+    public void setQB( Quarterback qb ) {
 	myQB = qb;
-	System.out.print("My Quarterback is " + myQB);
     }
-    /*public static void readQB( Quarterback qb ) {
-    	System.out.print(qbname);
-    }*/
     public void setWR1( Receiver wr1 ) {
 	myWR1 = wr1;
     }
@@ -134,7 +120,7 @@ public class Players{
     
     
     public static void main( String[] args ) {
-    	setDefaultTeam("Giants");
+
     }
     
 }

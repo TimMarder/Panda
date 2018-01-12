@@ -24,8 +24,8 @@ public class OffensivePlayers extends Players {
     
     public static void main( String[] args ) {
         // === [ Quarterbacks ] ===
-        Quarterback e = new Quarterback("Eli Manning", "Giants");
-        e.setStats( 59 , 68 , 72 , 82 , 69 );
+        Quarterback EliManning = new Quarterback("Eli Manning", "Giants");
+        EliManning.setStats( 59 , 68 , 72 , 82 , 69 );
 
         Quarterback CarsonWentz = new Quarterback("Carson Wentz", "Eagles");
         CarsonWentz.setStats( 63 , 66 , 74 , 79 , 68 );
