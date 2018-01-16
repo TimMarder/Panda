@@ -325,7 +325,7 @@ public class Team {
     }//End of dashboard1()
 
     public void listPlayers() {
-	System.out.println("Offensive Players");
+	System.out.println("\nOffensive Players");
 	System.out.println(myQB);
 	System.out.println(myWR1);
 	System.out.println(myWR2);
@@ -334,9 +334,25 @@ public class Team {
 	System.out.println("Defensive Players");
 	System.out.println(myLB1);
 	System.out.println(myLB2);
-	System.out.println(myCB1);
+ 	System.out.println(myCB1);
 	System.out.println(myCB2);
 	System.out.println(mySS);
+
+	String lp = "\n";
+	lp += "1) Return to Dashboard\n";
+	System.out.println(lp);
+	
+	String call = Keyboard.readString();
+	if ( call.equals("1") )
+	    {
+		System.out.println("\nReturning to Dashboard.\n");
+	        dashboard();
+	    }//Option 1, Returns to Dashboard
+	else
+	    {
+		System.out.println("\nInvalid input. Returning to Dashboard.\n");
+		dashboard1();
+	    }//Returns to Dashboard
 	
     }//End of listPlayers()
     
@@ -350,7 +366,7 @@ public class Team {
 	if ( call.equals("1") )
 	    {
 		System.out.println("\nCoach" + teamName + "'s Budget\n");
-	        System.out.println(balance);
+		balancePrint();
 	    }//Option 1, Displays Budget
 	if ( call.equals("2") )
 	    {
@@ -359,15 +375,38 @@ public class Team {
 	    }//Option 2, Opens Payroll
 	else
 	    {
-		System.out.println("Invalid input. Returning to Dashboard.\n");
+		System.out.println("\nInvalid input. Returning to Dashboard.\n");
 		dashboard2();
 	    }//Returns to Dashboard
 
     }//End of dashboard2()
 
-    public void payroll() {
-
+    public void balancePrint() {
+	System.out.println("Your balance: " + balance + "\n");
+	String bp = "\n";
+	bp += "1) Return to Dashboard\n";
+	System.out.println(bp);
+	
+	String call = Keyboard.readString();
+	if ( call.equals("1") )
+	    {
+		System.out.println("\nCoach" + teamName + "'s Budget\n");
+		balancePrint();
+	    }//Option 1, Displays Budget
+	if ( call.equals("2") )
+	    {
+		System.out.println("\nCoach" + teamName + "'s Payroll\n");
+	        payroll();
+	    }//Option 2, Opens Payroll
+	else
+	    {
+		System.out.println("\nInvalid input. Returning to Dashboard.\n");
+		dashboard2();
+	    }//Returns to Dashboard
     }
+    public void payroll() {
+	
+    }//End of payroll()
     
     public void dashboard3() { //Buy Gear, Equip Gear	
 	String db3 = "";
@@ -391,16 +430,7 @@ public class Team {
     }//End of playGame()
     
     public static void main( String[] args ) {
-	/*
-	  Team Coach = new Team();
-	  System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	  Coach.setupUser();
-	  System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	  Coach.setupTeam();
-	  System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	  System.out.println(Coach); //Week 1
-	  Coach.dashboard(); 
-	*/
+	
     }//End of main
     
 }//End of Team
