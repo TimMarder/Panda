@@ -15,6 +15,7 @@ public class woo {
 		You.setupTeam();
 		System.out.println(You);
 		
+		/*
 		Team T1 = new Team("Coach 1", "Eagles");
 		System.out.println(T1);
 		
@@ -26,7 +27,9 @@ public class woo {
 		
 		Team T4 = new Team("Coach 4", "Falcons");
 		System.out.println(T4);
+		*/
 		
+		You.dashboard();
 	}//End of main
 	
 }//End of woo

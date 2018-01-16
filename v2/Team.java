@@ -4,30 +4,34 @@ import cs1.Keyboard;
 public class Team {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
-    public String userName;  //the name of the user but will display as "Coach <name>".
-    public String teamName;  //the team that the user chooses to coach.
-    public int teamRating;
-    public int week;
-    public Quarterback myQB;
-    public Receiver myWR1, myWR2, myWR3;
-    public Runningback myRB;
-    public Linebacker myLB1, myLB2;
-    public Cornerback myCB1, myCB2;
-    public Safety mySS;
+    private String userName;  //the name of the user but will display as "Coach <name>".
+    private String teamName;  //the team that the user chooses to coach.
+    private int teamRating;
+    private int week;
+    private int wins, losses;
+    private Quarterback myQB;
+    private Receiver myWR1, myWR2, myWR3;
+    private Runningback myRB;
+    private Linebacker myLB1, myLB2;
+    private Cornerback myCB1, myCB2;
+    private Safety mySS;
 
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Team() {
-    	
-    }
+    	week = 1;
+    	wins = 0;
+    	losses = 0;
+    }//End of Team()
     
     public Team( String name , String team ) {
+    	this();
     	setUserName( name );
     	setTeamName( team );
-    }
+    }//End of Team(name,team)
     
     public void setUserName( String name ) {
     	userName = name;
-	}
+	}//End of setUserName(name)
     
     public void setupUser() {
     	System.out.println("\nHello Coach, What is your name? (Input Name)\n");
@@ -39,118 +43,140 @@ public class Team {
 		    setUserName(name);
 		    System.out.println("\nWelcome Coach " + name + "!");
 		    return;
-		}
+		}//End of "Yes" loop
 		if( confirm.equalsIgnoreCase("No") ) {
 		    setupUser();
-		}
+		}//End of "No" loop
 		else {
 		    System.out.println("\nI couldn't quite get that.");
 		    setupUser();
-		}
-    }
+		}//Returns user to prompt
+    }//End of setupUser()
     
     public void setTeamName( String name ) {
 	teamName = name;
-	//menuBoard[1][1] = teamName;
-    }
+    }//End of setTeamName(name)
 
     public void setupTeam() {
-	System.out.println("\nCoach " + userName + ", What team are you coaching this season? (Giants Eagles Browns Steelers Falcons)\n");
-	String name = Keyboard.readString();
-	if( name.equalsIgnoreCase("Giants") ) {
-	    System.out.println("\nYou chose the Giants. Type 'Yes' to confirm, 'No' to change team.\n");
-	    String confirm = Keyboard.readString();
-	    if( confirm.equalsIgnoreCase("Yes") ) {
-		setTeamName(name.toUpperCase());
-		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
-		return;
-	    }
-	    if( confirm.equalsIgnoreCase("No") ) {
-		setupTeam();
-	    }
-	    else {
-		System.out.println("\nI couldn't quite get that.");
-		setupTeam();
-	    }
+    	System.out.println("\nCoach " + userName + ", What team are you coaching this season? (Giants Eagles Browns Steelers Falcons)\n");
+    	String name = Keyboard.readString();
+    	if( name.equalsIgnoreCase("Giants") )
+    	{
+    		System.out.println("\nYou chose the Giants. Type 'Yes' to confirm, 'No' to change team.\n");
+    		String confirm = Keyboard.readString();
+    		if( confirm.equalsIgnoreCase("Yes") )
+    		{
+    				setTeamName(name.toUpperCase());
+    				System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
+    				return;
+    		}//End of "Yes" loop
+    		if( confirm.equalsIgnoreCase("No") )
+    		{
+    			setupTeam();
+    		}//End of "No" loop, returns to prompt
+    		else
+    		{
+    			System.out.println("\nI couldn't quite get that.");
+    			setupTeam();
+    		}//Returns to prompt
+    		return;
+    	}//End of Giants prompt
+    	
+    	if( name.equalsIgnoreCase("Eagles") ) 
+    	{
+    		System.out.println("\nYou chose the Eagles. Type 'Yes' to confirm, 'No' to change team.\n");
+    		String confirm = Keyboard.readString();
+    		if( confirm.equalsIgnoreCase("Yes") )
+    		{
+    			setTeamName(name);
+    			System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
+    			return;
+    		}//End of "Yes" loop
+    		if( confirm.equalsIgnoreCase("No") )
+    		{
+    			setupTeam();
+    		}//End of "No" loop, returns to prompt
+    		else
+    		{
+    			System.out.println("\nI couldn't quite get that.");
+    			setupTeam();
+    		}//Returns to prompt
+    		return;
+    	}//End of Eagles prompt
+    	
+    	if( name.equalsIgnoreCase("Browns") )
+    	{
+    		System.out.println("\nYou chose the Browns. Type 'Yes' to confirm, 'No' to change team.\n");
+    		String confirm = Keyboard.readString();
+    		if( confirm.equalsIgnoreCase("Yes") )
+    		{
+    				setTeamName(name);
+    				System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
+    				return;
+    		}//End of "Yes" loop
+    		if( confirm.equalsIgnoreCase("No") )
+    		{
+    			setupTeam();
+    		}//End of "No" loop, returns to prompt
+    		else
+    		{
+    			System.out.println("\nI couldn't quite get that.");
+    			setupTeam();
+    		}//Returns to prompt
 	    return;
-	}
-	if( name.equalsIgnoreCase("Eagles") ) {
-	    System.out.println("\nYou chose the Eagles. Type 'Yes' to confirm, 'No' to change team.\n");
-	    String confirm = Keyboard.readString();
-	    if( confirm.equalsIgnoreCase("Yes") ) {
-		setTeamName(name);
-		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
-		return;
-	    }
-	    if( confirm.equalsIgnoreCase("No") ) {
-		setupTeam();
-	    }
-	    else {
-		System.out.println("\nI couldn't quite get that.");
-		setupTeam();
-	    }
+    	}//End of Browns prompt
+    	
+    	if( name.equalsIgnoreCase("Steelers") )
+    	{
+    		System.out.println("\nYou chose the Steelers. Type 'Yes' to confirm, 'No' to change team.\n");
+    		String confirm = Keyboard.readString();
+    		if( confirm.equalsIgnoreCase("Yes") )
+    		{
+    			setTeamName(name);
+    			System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
+    			return;
+    		}//End of "Yes" loop
+    		if( confirm.equalsIgnoreCase("No") )
+    		{
+    			setupTeam();
+    		}//End of "No" loop, returns to prompt
+    		else
+    		{
+    			System.out.println("\nI couldn't quite get that.");
+    			setupTeam();
+    		}//Returns to prompt
 	    return;
-	}
-	if( name.equalsIgnoreCase("Browns") ) {
-	    System.out.println("\nYou chose the Browns. Type 'Yes' to confirm, 'No' to change team.\n");
-	    String confirm = Keyboard.readString();
-	    if( confirm.equalsIgnoreCase("Yes") ) {
-		setTeamName(name);
-		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
-		return;
-	    }
-	    if( confirm.equalsIgnoreCase("No") ) {
-		setupTeam();
-	    }
-	    else {
-		System.out.println("\nI couldn't quite get that.");
-		setupTeam();
-	    }
+    	}//End of Steelers prompt
+    	
+    	if( name.equalsIgnoreCase("Falcons") ) {
+    		System.out.println("\nYou chose the Falcons. Type 'Yes' to confirm, 'No' to change team.\n");
+    		String confirm = Keyboard.readString();
+    		if( confirm.equalsIgnoreCase("Yes") ) {
+    			setTeamName(name);
+    			System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
+    			return;
+    		}//End of "Yes" loop
+    		if( confirm.equalsIgnoreCase("No") ) {
+    			setupTeam();
+    		}//End of "No" loop, returns to prompt
+    		else {
+    			System.out.println("\nI couldn't quite get that.");
+    			setupTeam();
+    		}//Returns to prompt
 	    return;
-	}
-	if( name.equalsIgnoreCase("Steelers") ) {
-	    System.out.println("\nYou chose the Steelers. Type 'Yes' to confirm, 'No' to change team.\n");
-	    String confirm = Keyboard.readString();
-	    if( confirm.equalsIgnoreCase("Yes") ) {
-		setTeamName(name);
-		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
-		return;
-	    }
-	    if( confirm.equalsIgnoreCase("No") ) {
-		setupTeam();
-	    }
-	    else {
-		System.out.println("\nI couldn't quite get that.");
-		setupTeam();
-	    }
-	    return;
-	}
-	if( name.equalsIgnoreCase("Falcons") ) {
-	    System.out.println("\nYou chose the Falcons. Type 'Yes' to confirm, 'No' to change team.\n");
-	    String confirm = Keyboard.readString();
-	    if( confirm.equalsIgnoreCase("Yes") ) {
-		setTeamName(name);
-		System.out.println("\nWelcome to the " + teamName + " Coach " + userName + "!");
-		return;
-	    }
-	    if( confirm.equalsIgnoreCase("No") ) {
-		setupTeam();
-	    }
-	    else {
-		System.out.println("\nI couldn't quite get that.");
-		setupTeam();
-	    }
-	    return;
-	}
-	else {
-	    System.out.println("\nI couln't quite get that.");
-	    setupTeam();
-	}
-    }
+    	}//End of Falcons prompt
+    	
+    	else
+    	{
+    		System.out.println("\nI couln't quite get that.");
+    		setupTeam();
+    	}//Returns to prompt
+    	
+    }//End of setupTeam()
 
     public void setWeek(int i) {
-	week = i;
-    }
+    	week = i;
+    }//end of setWeek(i)
 
     public String toString() {
 		String menu = "";
@@ -165,64 +191,140 @@ public class Team {
 		menu += "[5] Game On! \n";
 		menu += "==================== \n";
 		return menu;
-    }
+    }//End of toString()
 
     public void dashboard() {
-	String call = Keyboard.readString();
-	if( call.equals("1") ) {
-	    dashboard1();
-	    return;
-	}
-	if( call.equals("2") ) {
-	    dashboard2();
-	    return;
-	}
-	if( call.equals("3") ) {
-	    dashboard3();
-	    return;
-	}
-	if( call.equals("4") ) {
-	    dashboard4();
-	    return;
-	}
-	if( call.equals("5") ) {
-	    dashboard5();
-	    return;
-	}
-	else {
-	    System.out.println("\nInvalid choice\n");
-	    this.toString();
-	}
+    	String call = Keyboard.readString();
+    	if( call.equals("1") ) {
+    		dashboard1();
+    		return;
+    	}//Calls option 1
+    	
+    	if( call.equals("2") ) {
+    		dashboard2();
+    		return;
+    	}//Calls option 2
+    	
+    	if( call.equals("3") ) {
+    		dashboard3();
+    		return;
+    	}//Calls option 3
+    	
+    	if( call.equals("4") ) {
+    		dashboard4();
+    		return;
+    	}//Calls option 4
+    	
+    	if( call.equals("5") ) {
+    		dashboard5();
+    		return;
+    	}//Calls option 5
+    	
+    	else
+    	{
+    		System.out.println("\nInvalid choice\n");
+    		this.dashboard();
+    	}//Invalid call, returns to prompt
 	
-    }
+    }//End of dashboard()
+    
+    public void setQB( Quarterback qb ) {
+    	myQB = qb;
+    }//End of setQB(qb)
+    public Quarterback getQB() {
+    	return myQB;
+    }//End of getQB()
+    
+    public void setWR1( Receiver wr ) {
+    	myWR1 = wr;
+    }//End of setWR1(wr)
+    public Receiver getWR1(){
+    	return myWR1;
+    }//End of getWR1()
+    
+    public void setWR2( Receiver wr ) {
+    	myWR2 = wr;
+    }//End of setWR2(wr)
+    public Receiver getWR2(){
+    	return myWR2;
+    }//End of getWR2()
+    
+    public void setWR3( Receiver wr ) {
+    	myWR3 = wr;
+    }//End of setWR3(wr)
+    public Receiver getWR3(){
+    	return myWR3;
+    }//End of getWR3()
+    
+    public void setRB( Runningback rb ) {
+    	myRB = rb;
+    }//End of setRB(rb)
+    public Runningback getRB(){
+    	return myRB;
+    }//End of getRB()
+    
+    public void setWR1( Linebacker lb ) {
+    	myLB1 = lb;
+    }//End of setLB1(lb)
+    public Linebacker getLB1(){
+    	return myLB1;
+    }//End of getLB1()
+    
+    public void setWR2( Linebacker lb ) {
+    	myLB2 = lb;
+    }//End of setLB2(lb)
+    public Linebacker getLB2(){
+    	return myLB2;
+    }//End of getLB2()
+    
+    public void setCB1( Cornerback cb ) {
+    	myCB1 = cb;
+    }//End of setCB1(cb)
+    public Cornerback getCB1(){
+    	return myCB1;
+    }//End of getCB1()
+
+    public void setCB2( Cornerback cb ) {
+    	myCB2 = cb;
+    }//End of setCB2(cb)
+    public Cornerback getCB2(){
+    	return myCB2;
+    }//End of getCB2()
+      
+    public void setSS( Safety ss ) {
+    	mySS = ss;
+    }//End of setSS(ss)
+    public Safety getSS(){
+    	return mySS;
+    }//End of getSS()
 
     public void dashboard1() { //List Players, View Stats
-	
-    }
+    	
+    }//End of dashboard1()
     
     public void dashboard2() { //View Budget, View Payroll
 
-    }
+    }//End of dashboard2()
     
     public void dashboard3() { //Buy Gear, Equip Gear
 	
-    }
+    }//End of dashboard3()
     
     public void dashboard4() { //Draft Players, Team Roster
 	
-    }
+    }//End of dashboard4()
     
     public void dashboard5() { //Play Game!!
-	playGame();
-	    
-    }
+    	playGame();
+    }//End of dashboard5()
 
     public void playGame() {
-	week++;
-	
-    }
+		setWeek( week + 1 );
+		
+    }//End of playGame()
     
     public static void main( String[] args ) {
+    /*
     Team Coach = new Team();
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	Coach.setupUser();
@@ -231,10 +333,7 @@ public class Team {
 	System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	System.out.println(Coach); //Week 1
 	Coach.dashboard(); 
-    }
+	*/
+    }//End of main
     
-}
-/* woo.java
-*   - main method <> dialogue
-*	<> make 5 teams
-*/
+}//End of Team
