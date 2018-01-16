@@ -20,8 +20,9 @@ public class Team {
     	
     }
     
-    public Team( String name ) {
+    public Team( String name , String team ) {
     	setUserName( name );
+    	setTeamName( team );
     }
     
     public void setUserName( String name ) {
