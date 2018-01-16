@@ -13,7 +13,18 @@ public class Safety extends DefensivePlayers {
     public Safety(String ssname , String ssteam) {
 	super(ssname, ssteam);
     }
-    
+
+    public String toString() {
+	String retStr = "";
+	retStr += "[SS]" + name + "\n";
+	retStr += "Catching: " + catching + "\n"; 
+	retStr += "Awareness: " + awareness + "\n";
+	retStr += "Speed: " + speed + "\n";
+	retStr += "Coverage: " + coverage + "\n";
+	retStr += "Tackling: " + tackling + "\n";
+	return retStr;
+    }
+	    
     public void setStats() {
     	setCatching(70);
     	setAwareness(70);
@@ -55,6 +66,9 @@ public class Safety extends DefensivePlayers {
 	}
 
 	public static void main(String[] args) {
+	    // Safety yo = new Safety("Bob Dylan");
+	    // System.out.println(yo);
+	    
 
 	}
 

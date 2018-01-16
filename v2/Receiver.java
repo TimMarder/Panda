@@ -14,6 +14,17 @@ public class Receiver extends OffensivePlayers{
 	super(wrname, wrteam);
     }
 
+    public String toString() {
+	String retStr = "";
+	retStr += "[WR]" + name + "\n";
+	retStr += "Agility: " + agility + "\n"; 
+	retStr += "Awareness: " + awareness + "\n";
+	retStr += "Speed: " + speed + "\n";
+	retStr += "Vertical: " + vertical + "\n";
+	retStr += "Catching: " + catching + "\n";
+	return retStr;
+    }
+    
     public void setStats() {
     	setAgility(70);
     	setAwareness(70);
