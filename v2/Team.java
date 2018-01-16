@@ -1,7 +1,7 @@
 //~~~~~~~~IMPORTS~~~~~~~~
 import cs1.Keyboard;
 
-public class Team extends woo{
+public class Team {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
     public String userName;  //the name of the user but will display as "Coach <name>".
@@ -11,15 +11,17 @@ public class Team extends woo{
     public Quarterback myQB;
     public Receiver myWR1, myWR2, myWR3;
     public Runningback myRB;
-    public Linebacker myLB1;
-    public Linebacker myLB2;
-    public Cornerback myCB1;
-    public Cornerback myCB2;
+    public Linebacker myLB1, myLB2;
+    public Cornerback myCB1, myCB2;
     public Safety mySS;
 
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Team() {
     	
+    }
+    
+    public Team( String name ) {
+    	setUserName( name );
     }
     
     public void setUserName( String name ) {
