@@ -462,7 +462,6 @@ public class Team {
 	    */dashboard5();
 	    return;
     	}//Calls option 5
-    	*/
     	else
 	    {
     		System.out.println("\nInvalid choice\n");
