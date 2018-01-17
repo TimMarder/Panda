@@ -18,7 +18,9 @@ helped with planning.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~ so far none :3 ~
+- Our shop class needed to be static, and we had a
+lot of difficulty figuring out how to make it operate
+on a balance that is not static.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,12 +33,18 @@ MID-DEVELOPMENT DESIGN CHANGES
 to work in this program. After thinking what would be the
 easiest way to code the program, we changed up which classes
 we think will extend other classes.
+- Originally we were going to have separate classes for helmet,
+cleats, and pads, but we decided to integrate them into our shop
+class.
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Trying to jump straight into writing an organized UML
 without first making a messy plan on a key to success is
 really hard.
+- The final product is not always what you invisioned from 
+the start, because you make alot of design changes as you go
+through the process of creating your program. 
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -94,5 +102,6 @@ Sean Roudnitsky :: Made revised UML.
 Tim Marder :: Worked on Offensiveplayers.java, Players.java,
 	      and Team.java.
 Ryan Kim :: Made woo.java, made Team.java, worked on Players.java	    
-Sean Roudnitsky ::
+Sean Roudnitsky :: Updated devlog, made Shop.java, worked on Team.java,
+	  	   worked on Game.java, made Draft.java
 ==============================================================
