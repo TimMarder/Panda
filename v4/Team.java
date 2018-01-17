@@ -103,6 +103,11 @@ public class Team {
     	setTeamName( team );
     }//End of Team(name,team)
     
+    //~~~~~~~~METHODS~~~~~~~~
+    public int getBalance() {
+    	return balance;
+    }//End of getBalance()
+    
     public void setUserName( String name ) {
     	userName = name;
     }//End of setUserName(name)
