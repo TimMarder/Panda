@@ -17,6 +17,10 @@ public class DefensivePlayers extends Team {
     }
     //~~~~~~~~METHODS~~~~~~~~
 
+    public void setName(String s) {
+	name = s;
+    }
+    
     public void setDefensivePlayerStats() {
         // === [ Linebackers ] ===
         //Linebacker JonathanCasillas = new Linebacker("Jonathan Casillas", "Giants");

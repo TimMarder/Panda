@@ -55,6 +55,7 @@ public class Draft {
 	int choice = Keyboard.readInt();
 	if (choice == 1) {
 	    updateTeamStats(2);
+	    Team.myQB.setName("Michael Vick");
 	}
 	else if (choice == 2) {
 	    updateTeamStats(5);
@@ -165,5 +166,6 @@ public class Draft {
     
     public static void main(String args[]) {
 	openDraft();
+	
     }
 }

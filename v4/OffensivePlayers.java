@@ -20,7 +20,11 @@ public class OffensivePlayers extends Team {
 
     //have all stats in a csv file
     //import that
-    //parse it to get each 
+    //parse it to get each
+
+    public void setName(String s) {
+	name = s;
+    }
 
     public static void setOffensivePlayerStats() {
         // === [ Quarterbacks ] ===

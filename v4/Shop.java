@@ -5,12 +5,6 @@ public class Shop {
     public static String[] helmets = {"Riddel ($x) +5 Team Rating", "Schutt ($x) +10 Team Rating", "Xenith ($x) +15 Team Rating"};
     public static String[] pads = {"Under Armour ($x) +5 Team Rating", "Adidas ($x) +10 Team Rating", "Nike ($x) +15 Team Rating"};
     public static String[] cleats = {"Alphas ($x) +5 Team Rating", "Highlights ($x) +10 Team Rating", "Untouchables ($x) +15 Team Rating"};
-    public static String[] quarterbacks = {"MichaelVick", "TomBrady"};
-    public static String[] receivers = {"MikeEvans", "DeseanJackson", "DezBryant"};
-    public static String[] runningbacks = {"MattForte", "ToddGurley"};
-    public static String[] linebackers = {"LukeKuechly", "RayLewis"};
-    public static String[] cornerbacks = {"RichardSherman", "PatrickPeterson"};
-    public static String[] safetys = {"EarlThomas", "KamChancellor"};
 
     public static String printArray(String[] s) {
 	String retStr = "";
@@ -25,7 +19,6 @@ public class Shop {
 	Team.teamRating += n;
     }
 					  
-    
     public static void openShop(){
 	System.out.println(menu);
 	int choice = Keyboard.readInt();
