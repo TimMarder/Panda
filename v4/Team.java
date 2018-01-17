@@ -595,8 +595,8 @@ public class Team {
 
 
     public void dashboard5() { //Play Game!!
-	System.out.println("You are about to start a game, are you sure?");
-	System.out.println("Type 'Yes' to play or 'No' to go back");
+	System.out.println("\nYou are about to start a game, are you sure?");
+	System.out.println("\nType 'Yes' to play or 'No' to go back\n");
 	String call = Keyboard.readString();
 	if (call.equalsIgnoreCase("Yes")) {
 		Game.setTeamRating();
@@ -617,8 +617,8 @@ public class Team {
 
     public static int setTeamRating(){
     	teamRating =
-    	(myQB.playerRating + myWR1.playerRating + myWR2.playerRating +
-    	myWR3.playerRating + myRB.playerRating) / 5;
+    	(myQB.playerRating + myWR1.playerRating + myWR2.playerRating + myWR3.playerRating + myRB.playerRating +
+    	 myLB1.playerRating + myLB2.playerRating + myCB1.playerRating + myCB2.playerRating + mySS.playerRating) / 10;
     	return teamRating;
     }
 
