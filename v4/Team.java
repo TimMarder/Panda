@@ -820,6 +820,10 @@ public class Team {
     public void playGame() {
 	setWeek( week + 1 );
     }//End of playGame()
+
+    public static void endGame() {
+        return;
+    }
     
     public static void main( String[] args ) {
 

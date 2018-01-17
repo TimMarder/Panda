@@ -548,12 +548,16 @@ public class Game {
 		System.out.println("YOU WON!!!\n");
 		System.out.println("Final score is " + myScore + "-" + theirScore + "!\n");
 		System.out.println("You are rewarded $" + (25 * difficulty) + "!\n");
+		Team.endGame();
+		stop;
 	}
 
 	public static void lose() {
 		System.out.println("OPPONENT WINS!!!\n");
 		System.out.println("Final score is " + myScore + "-" + theirScore + "!\n");
 		System.out.println("Here is a small amount of money to upgrade your players and hopefully win next time! ( $" + (10 * difficulty) + " )");
+		Team.endGame();
+		return;
 	}
 
 	public static void setChance() {
