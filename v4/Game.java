@@ -549,11 +549,9 @@ public class Game {
 		System.out.println("YOU WON!!!\n");
 		System.out.println("Final score is " + myScore + "-" + theirScore + "!\n");
 		System.out.println("You are rewarded $" + (25 * difficulty) + "!\n");
-<<<<<<< HEAD
+
 		Team.endGame();
 		return;
-=======
->>>>>>> 333ca01bf9283d57ae014157645a4e47e05eddbf
 	}
 
 	public static void lose() {
