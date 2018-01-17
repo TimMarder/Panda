@@ -48,13 +48,13 @@ public class DefensivePlayers extends Team {
         JamieCollins.setPlayerRating();
 
         //Linebacker JoeSchobert = new Linebacker("Joe Schobert", "Browns");
-        JoeSchobert.setStats( 71 , 79 , 80 , 94 , 76 );
+        JoeSchobert.setStats( 71 , 69 , 70 , 74 , 66 );
         JoeSchobert.setPlayerRating();
 
 
 
         //Linebacker RyanShazier = new Linebacker("Ryan Shazier", "Steelers");
-        RyanShazier.setStats( 84 , 87 , 96 , 93 , 90 );
+        RyanShazier.setStats( 69 , 70 , 73 , 69 , 69 );
         RyanShazier.setPlayerRating();
 
         //Linebacker TJWatt = new Linebacker("T.J. Watt", "Steelers");
@@ -145,31 +145,31 @@ public class DefensivePlayers extends Team {
 
         // === [ Safeties ] ===
         //Safety CooperTaylor = new Safety("Cooper Taylor", "Giants");
-        CooperTaylor.setStats( 66 , 62 , 80 , 82 , 60 );
+        CooperTaylor.setStats( 69 , 61 , 72 , 80 , 68 );
         CooperTaylor.setPlayerRating();
 
 
 
         //Safety MalcolmJenkins = new Safety("Malcolm Jenkins", "Eagles");
-        MalcolmJenkins.setStats( 67 , 69 , 70 , 73 , 71 );
+        MalcolmJenkins.setStats( 68 , 72 , 73 , 70 , 67 );
         MalcolmJenkins.setPlayerRating();
 
 
 
         //Safety DonteWhitner = new Safety("Donte Whitner", "Browns");
-        DonteWhitner.setStats( 63 , 66 , 74 , 79 , 68 );
+        DonteWhitner.setStats( 65 , 71 , 75 , 68 , 71 );
         DonteWhitner.setPlayerRating();
 
 
 
         //Safety MikeMitchell = new Safety("Mike Mitchell", "Steelers");
-        MikeMitchell.setStats( 69 , 61 , 72 , 80 , 68 );
+        MikeMitchell.setStats( 63 , 66 , 74 , 79 , 68 );
         MikeMitchell.setPlayerRating();
 
 
 
         //Safety WilliamMoore = new Safety("William Moore", "Falcons");
-        WilliamMoore.setStats( 59 , 68 , 72 , 82 , 69 ); 
+        WilliamMoore.setStats( 67 , 69 , 70 , 73 , 71 ); 
         WilliamMoore.setPlayerRating();
 
 
