@@ -13,7 +13,7 @@ public class DefensivePlayers extends Team {
 
     public DefensivePlayers(String playerName, String playerTeam) {
         name = playerName;
-	team = playerTeam;
+	   team = playerTeam;
     }
     //~~~~~~~~METHODS~~~~~~~~
 
@@ -21,7 +21,7 @@ public class DefensivePlayers extends Team {
 	name = s;
     }
     
-    public void setDefensivePlayerStats() {
+    public static void setDefensivePlayerStats() {
         // === [ Linebackers ] ===
         //Linebacker JonathanCasillas = new Linebacker("Jonathan Casillas", "Giants");
         JonathanCasillas.setStats( 59, 68, 72 , 82 , 69 );

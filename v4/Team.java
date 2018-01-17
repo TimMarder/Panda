@@ -17,6 +17,7 @@ public class Team {
     public static Linebacker myLB1, myLB2;
     public static Cornerback myCB1, myCB2;
     public static Safety mySS;
+    public static String playerName;
 
     //~~~~~~~~PLAYERS~~~~~~~~~~
     // === [ Quarterbacks ] ===
@@ -89,6 +90,7 @@ public class Team {
     public static Safety EarlThomas  = new Safety("Earl Thomas");
     public static Safety KamChancellor = new Safety("Cam Chancellor");
 
+
     //~~~~~~~~CONSTRUCTOR~~~~~~~~
     public Team() {
     	week = 1;
@@ -133,6 +135,7 @@ public class Team {
 
     public void setupTeam() {
     	OffensivePlayers.setOffensivePlayerStats();
+        DefensivePlayers.setDefensivePlayerStats();
     	System.out.println("\nCoach " + userName + ", What team are you coaching this season? (Giants Eagles Browns Steelers Falcons)\n");
     	String name = Keyboard.readString();
     	if( name.equalsIgnoreCase("Giants") )
