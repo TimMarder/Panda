@@ -94,6 +94,7 @@ public class Team {
     	week = 1;
     	wins = 0;
     	losses = 0;
+    	myPayroll = "";
     }//End of Team()
     
     public Team( String name , String team ) {
@@ -583,35 +584,209 @@ public class Team {
     }//End of payroll()
     
     public void dashboard3() { //Buy Gear, Equip Gear	
-	String db3 = "";
-	System.out.println(db3);
+    	String db3 = "\n";
+    	db3 += "1) Buy Gear\n";
+    	db3 += "2) Equip Gear\n";
+    	db3 += "3) Return to Dashboard\n";
+    	System.out.println(db3);
+    	
+    	String call = Keyboard.readString();
+    	if ( call.equals("1") ) 
+    	{
+    		//Shop.openGearShop();
+    		return;
+    	}
+    	if ( call.equals("2") ) 
+    	{
+    		//Shop.openCloset();
+    		return;
+    	}
+    	if ( call.equals("3") )
+		{
+			System.out.println("\nReturning to Dashboard.\n");
+	        dashboard();
+		}//Option 3, Returns to Dashboard
+    	else {
+    		System.out.println("Invalid input. Try again.\n");
+    		dashboard3();
+    	}
     }//End of dashboard3()
     
     public void dashboard4() { //Draft Players, Team Roster
-	String db4 = "";
-	System.out.println(db4);
+    	String db4 = "\n";
+    	db4 += "1) Draft Players\n";
+    	//db4 += "2) Team Roster\n";
+    	db4 += "2) Return to Dashboard\n";
+    	System.out.println(db4);
+    	
+    	String call = Keyboard.readString();
+    	if ( call.equals("1") ) 
+    	{
+    		//Shop.openPlayerDraft();
+    		return;
+    	}
+    	/*if ( call.equals("2") ) 
+    	{
+    		teamRoster();
+    	}*/
+    	if ( call.equals("2") )
+		{
+			System.out.println("\nReturning to Dashboard.\n");
+	        dashboard();
+		}//Option 2, Returns to Dashboard
+    	else {
+    		System.out.println("Invalid input. Try again.\n");
+    		dashboard4();
+    	}
     }//End of dashboard4()
     
-
-
+    /*public void teamRoster() {
+    		String tr = "\n";
+    		tr += "Which group would you like to change?\n";
+    		tr += "1) Offensive Lineup";
+    		tr += "2) Defensive Lineup";
+    		tr += "3) Exit Roster";
+    		System.out.println(tr);
+    		
+    		String call = Keyboard.readString();
+        	if ( call.equals("1") ) 
+        	{
+        		changeOffense();
+        	}
+        	if ( call.equals("2") ) 
+        	{
+        		changeDefense();
+        	}
+        	if ( call.equals("3") )
+    		{
+    			System.out.println("\nReturning to Dashboard.\n");
+    	        dashboard();
+    		}//Option 3, Returns to Dashboard
+        	else
+        	{
+        		System.out.println("Invalid input. Try again.\n");
+        		teamRoster();
+        	}
+    		
+    	}//End of teamRoster()
+    	
+    	public void changeOffense() {
+    		String co = "\n";
+    		co += "1) Change QB\n";
+    		co += "2) Change WR1\n";
+    		co += "3) Change WR2\n";
+    		co += "4) Change WR3\n";
+    		co += "5) Change RB\n";
+    		co += "6) Exit Offensive Lineup";
+    		System.out.println(co);
+    		
+    		String call = Keyboard.readString();
+        	if ( call.equals("1") ) 
+        	{
+        		String c1 = "\n";
+        		c1 += "My Quarterbacks:\n";
+        		c1 += "1) " + myQB + "\n";
+        		c1 += Shop.ownedQB() + "\n";
+        		
+        		String call1 = Keyboard.readString();
+        		if ( call1.equals("1") )
+        		{
+        			System.out.println()
+        		}
+        	}
+        	if ( call.equals("2") ) 
+        	{
+        		setWR1();
+        	}
+        	if ( call.equals("3") ) 
+        	{
+        		setWR2();
+        	}
+        	if ( call.equals("4") ) 
+        	{
+        		setWR3();
+        	}
+        	if ( call.equals("5") ) 
+        	{
+        		setRB();
+        	}
+        	if ( call.equals("6") )
+    		{
+    			System.out.println("\nReturning to Roster.\n");
+    	        teamRoster();
+    		}//Option 6, Returns to teamRoster()
+        	else
+        	{
+        		System.out.println("Invalid input. Try again.\n");
+        		changeOffense();
+        	}
+    	}//End of changeOffense()
+    	
+    	public void changeDefense() {
+    		String cd = "\n";
+    		cd += "1) Change LB1\n";
+    		cd += "2) Change LB2\n";
+    		cd += "3) Change CB1\n";
+    		cd += "4) Change CB2\n";
+    		cd += "5) Change SS\n";
+    		cd += "6) Exit Defensive Lineup";
+    		System.out.println(cd);
+    		
+    		String call = Keyboard.readString();
+        	if ( call.equals("1") ) 
+        	{
+        		setLB1();
+        	}
+        	if ( call.equals("2") ) 
+        	{
+        		setLB2();
+        	}
+        	if ( call.equals("3") ) 
+        	{
+        		setCB1();
+        	}
+        	if ( call.equals("4") ) 
+        	{
+        		setCB2();
+        	}
+        	if ( call.equals("5") ) 
+        	{
+        		setSS();
+        	}
+        	if ( call.equals("6") )
+    		{
+    			System.out.println("\nReturning to Roster.\n");
+    	        teamRoster();
+    		}//Option 6, Returns to teamRoster()
+        	else
+        	{
+        		System.out.println("Invalid input. Try again.\n");
+        		changeDefense();
+        	}
+    		
+    	}//End of changeDefense()*/
+    
     public void dashboard5() { //Play Game!!
-	System.out.println("\nYou are about to start a game, are you sure?");
-	System.out.println("\nType 'Yes' to play or 'No' to go back\n");
-	String call = Keyboard.readString();
-	if (call.equalsIgnoreCase("Yes")) {
-		Game.setTeamRating();
-		Game.setDifficulty(week);
-		Game.playGame();
-		return;
-	}
-	if (call.equalsIgnoreCase("No")) {
-		System.out.println("Returning to dashboard...\n");
-		dashboard();
-	}
-	else {
-		System.out.println("Invalid input. Try again.\n");
-		dashboard5();
-	}
+    	String db5 = "";
+    	db5 += "\nYou are about to start a game, are you sure?";
+    	db5 += "\nType 'Yes' to play or 'No' to go back\n";
+    	System.out.println(db5);
+    	
+    	String call = Keyboard.readString();
+    	if (call.equalsIgnoreCase("Yes")) {
+    		Game.setTeamRating();
+    		Game.setDifficulty(week);
+    		Game.playGame();
+    		return;
+    	}
+    	if (call.equalsIgnoreCase("No")) {
+    		System.out.println("Returning to dashboard...\n");
+    		dashboard();
+    	}
+    	else {
+    		System.out.println("Invalid input. Try again.\n");
+    		dashboard5();
+    	}
 
     }//End of dashboard5()
 
@@ -620,6 +795,10 @@ public class Team {
     	(myQB.playerRating + myWR1.playerRating + myWR2.playerRating + myWR3.playerRating + myRB.playerRating +
     	 myLB1.playerRating + myLB2.playerRating + myCB1.playerRating + myCB2.playerRating + mySS.playerRating) / 10;
     	return teamRating;
+    }
+    
+    public static int setTeamRating(int i) {
+    	teamRating = i;
     }
 
     public void playGame() {
