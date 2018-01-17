@@ -524,12 +524,12 @@ public class Team {
     	String call = Keyboard.readString();
 		if ( call.equals("1") )
 		{
-			System.out.println("\nCoach" + userName + "'s Budget\n");
+			System.out.println("\nCoach " + userName + "'s Budget\n");
 			balancePrint();
 		}//Option 1, Displays Budget
 		if ( call.equals("2") )
 		{
-			System.out.println("\nCoach" + userName + "'s Payroll\n");
+			System.out.println("\nCoach " + userName + "'s Payroll\n");
 			payrollPrint();
 		}//Option 2, Displays Payroll
 		if ( call.equals("3") )
@@ -593,8 +593,8 @@ public class Team {
     	String call = Keyboard.readString();
     	if ( call.equals("1") ) 
     	{
-    		//Shop.openGearShop();
-    		return;
+    		Shop.openShop();
+    		dashboard();
     	}
     	/*if ( call.equals("2") ) 
     	{
@@ -797,7 +797,7 @@ public class Team {
     	return teamRating;
     }
     
-    public static int setTeamRating(int i) {
+    public static void setTeamRating(int i) {
     	teamRating = i; 
     }
 

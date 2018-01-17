@@ -1,11 +1,16 @@
 import cs1.Keyboard;
 
 public class Shop {
-    private static String menu = "~~~~~Shop~~~~~~\n[1]Browse Helmets\n[2]Browse Cleats\n[3]Browse Pads\n[4]Exit Shop";
+    private static String menu = "\n~~~~~~Shop~~~~~~~\n[1]Browse Helmets\n[2]Browse Cleats\n[3]Browse Pads\n[4]Exit Shop\n";
     public static String[] helmets = {"Riddel ($x) +5 Team Rating", "Schutt ($x) +10 Team Rating", "Xenith ($x) +15 Team Rating"};
     public static String[] pads = {"Under Armour ($x) +5 Team Rating", "Adidas ($x) +10 Team Rating", "Nike ($x) +15 Team Rating"};
     public static String[] cleats = {"Alphas ($x) +5 Team Rating", "Highlights ($x) +10 Team Rating", "Untouchables ($x) +15 Team Rating"};
-
+    public static String[] quarterbacks = {"MichaelVick", "TomBrady"};
+    public static String[] receivers = {"MikeEvans", "DeseanJackson", "DezBryant"};
+    public static String[] runningbacks = {"MattForte", "ToddGurley"};
+    public static String[] linebackers = {"LukeKuechly", "RayLewis"};
+    public static String[] cornerbacks = {"RichardSherman", "PatrickPeterson"};
+    public static String[] safetys = {"EarlThomas", "KamChancellor"};
 
     public static String printArray(String[] s) {
 	String retStr = "";
@@ -19,7 +24,6 @@ public class Shop {
     public static void updateTeamStats(int n) {
 	Team.teamRating += n;
     }
-	
 					  
     
     public static void openShop(){
@@ -38,7 +42,7 @@ public class Shop {
     }
 
     public static void buyHelm() {
-	System.out.println("~~~~~Helmets~~~~~");
+	System.out.println("\n~~~~~Helmets~~~~~");
 	System.out.println(printArray(helmets));
 	int choice = Keyboard.readInt();
 	if (choice < 1 || choice > 4) {
@@ -46,7 +50,7 @@ public class Shop {
 	    buyHelm();
 	}
 	if (choice == 4) {
-	    shop();
+	    openShop();
 	}
 	if (choice == 1) {
 	    updateTeamStats(5);
@@ -60,7 +64,7 @@ public class Shop {
     }
 
     public static void buyCleats() {
-	System.out.println("~~~~~Cleats~~~~~");
+	System.out.println("\n~~~~~Cleats~~~~~");
 	System.out.println(printArray(cleats));
 	int choice = Keyboard.readInt();
 	if (choice < 1 || choice > 4) {
@@ -68,7 +72,7 @@ public class Shop {
 	    buyHelm();
 	}
 	if (choice == 4) {
-	    shop();
+	    openShop();
 	}
 	if (choice == 1) {
 	    updateTeamStats(5);
@@ -82,7 +86,7 @@ public class Shop {
     }
 
     public static void buyPads() {
-	System.out.println("~~~~~Pads~~~~~");
+	System.out.println("\n~~~~~Pads~~~~~");
 	System.out.println(printArray(pads));
 	int choice = Keyboard.readInt();
 	if (choice < 1 || choice > 4) {
@@ -90,7 +94,7 @@ public class Shop {
 	    buyHelm();
 	}
 	if (choice == 4) {
-	    shop();
+	    openShop();
 	}
 	if (choice == 1) {
 	    updateTeamStats(5);
@@ -108,7 +112,7 @@ public class Shop {
 	/*Team yo = new Team();
 	System.out.println(yo.teamRating);
 	    
-	shop();
+	openShop();
 	System.out.println(yo.teamRating);
 	*/
     }
