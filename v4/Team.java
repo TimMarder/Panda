@@ -107,6 +107,12 @@ public class Team {
     public int getBalance() {
     	return balance;
     }//End of getBalance()
+    public void addBalance( int i ) {
+    	balance += i;
+    }//End of addBalance()
+    public void subtractBalance( int i ) {
+    	balance -= i;
+    }//End of subtractBalance()
     
     public void setUserName( String name ) {
     	userName = name;
