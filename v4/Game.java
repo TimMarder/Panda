@@ -357,8 +357,6 @@ public class Game {
 		System.out.println("Ball Goes to Opponent\n");
 		myScore += 6;
 		checkWin();
-		scoreUpdater();
-		kickoff();
 		return;
 	}
 
@@ -526,21 +524,24 @@ public class Game {
 		System.out.println("Ball Goes to You!\n");
 		theirScore += 6;
 		checkWin();
-		scoreUpdater();
-		receive();
 		return;
 	}
 
 	public static void checkWin() {
-		if (myScore >= 18 || theirScore >= 18) {
+		while (myScore >= 18 || theirScore >= 18) {
 			if (myScore > theirScore) {
 				win();
-				return;
+				break;
 			}
 			else {
 				lose();
-				return;
+				break;
 			}
+		}
+		while (myScore < 18 && theirScore < 18) {
+			scoreUpdater();
+			receive();
+			break;
 		}
 	}
 
@@ -548,16 +549,17 @@ public class Game {
 		System.out.println("YOU WON!!!\n");
 		System.out.println("Final score is " + myScore + "-" + theirScore + "!\n");
 		System.out.println("You are rewarded $" + (25 * difficulty) + "!\n");
+<<<<<<< HEAD
 		Team.endGame();
 		return;
+=======
+>>>>>>> 333ca01bf9283d57ae014157645a4e47e05eddbf
 	}
 
 	public static void lose() {
 		System.out.println("OPPONENT WINS!!!\n");
 		System.out.println("Final score is " + myScore + "-" + theirScore + "!\n");
 		System.out.println("Here is a small amount of money to upgrade your players and hopefully win next time! ( $" + (10 * difficulty) + " )");
-		Team.endGame();
-		return;
 	}
 
 	public static void setChance() {

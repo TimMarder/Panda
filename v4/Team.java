@@ -822,7 +822,7 @@ public class Team {
     }//End of playGame()
 
     public static void endGame() {
-        return;
+        
     }
     
     public static void main( String[] args ) {
