@@ -4,13 +4,15 @@ import cs1.Keyboard;
 public class Team {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
+
+    
     public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
     public String myPayroll;
     public static int teamRating;
     public int week;
     public int wins, losses;
-    public int balance;
+    public static int balance;
     public static Quarterback myQB;
     public static Receiver myWR1, myWR2, myWR3;
     public static Runningback myRB;
@@ -97,6 +99,7 @@ public class Team {
     	wins = 0;
     	losses = 0;
     	myPayroll = "";
+	balance = 1000;
     }//End of Team()
     
     public Team( String name , String team ) {
@@ -104,6 +107,17 @@ public class Team {
     	setUserName( name );
     	setTeamName( team );
     }//End of Team(name,team)
+    
+    //~~~~~~~~METHODS~~~~~~~~
+    public int getBalance() {
+    	return balance;
+    }//End of getBalance()
+    public void addBalance( int i ) {
+    	balance += i;
+    }//End of addBalance()
+    public static void subtractBalance( int i ) {
+    	balance -= i;
+    }//End of subtractBalance()
     
     public void setUserName( String name ) {
     	userName = name;
@@ -348,8 +362,8 @@ public class Team {
 	menu += "[1] Team stats \n";
 	menu += "[2] Team budget \n";
 	menu += "[3] Equipment \n";
-	menu += "[4] Players \n";
-	menu += "[5] Game On! \n";
+	//menu += "[4] Players \n";
+	menu += "[4] Game On! \n";
 	menu += "==================== \n";
 	return menu;
     }//End of toString()
@@ -443,19 +457,18 @@ public class Team {
     	}//Calls option 3
     	
     	if( call.equals("4") ) {
-	    dashboard4();
-	    return;
-    	}//Calls option 4
+	    //dashboard4();
+	    //return;
+    	//}//Calls option 4
     	
-    	if( call.equals("5") ) {
-	    dashboard5();
+    	/*if( call.equals("5") ) {
+	    */dashboard5();
 	    return;
     	}//Calls option 5
-    	
     	else
 	    {
-		System.out.println("\nInvalid choice\n");
-		this.dashboard();
+    		System.out.println("\nInvalid choice\n");
+			this.dashboard();
 	    }//Invalid call, returns to prompt
 	
     }//End of dashboard()
@@ -469,7 +482,7 @@ public class Team {
 	String call = Keyboard.readString();
 	if ( call.equals("1") )
 	    {
-		System.out.println("\nCoach" + teamName + "'s team\n");
+		System.out.println("\nCoach " + userName + "'s team\n");
 		listPlayers();
 	    }//Option 1, Lists players
 	if ( call.equals("2") )
@@ -520,8 +533,8 @@ public class Team {
     public void dashboard2() { //View Budget, View Payroll	
     	String db2 = "\n";
     	db2 += "1) View Budget\n";
-    	db2 += "2) View Payroll\n";
-    	db2 += "3) Return to Dashboard\n";
+    	//db2 += "2) View Payroll\n";
+    	db2 += "2) Return to Dashboard\n";
     	System.out.println(db2);
 	
     	String call = Keyboard.readString();
@@ -532,18 +545,18 @@ public class Team {
 		}//Option 1, Displays Budget
 		if ( call.equals("2") )
 		{
-			System.out.println("\nCoach " + userName + "'s Payroll\n");
+		/*	System.out.println("\nCoach " + userName + "'s Payroll\n");
 			payrollPrint();
 		}//Option 2, Displays Payroll
 		if ( call.equals("3") )
-		{
+		{*/
 			System.out.println("\nReturning to Dashboard.\n");
 	        dashboard();
 		}//Option 3, Returns to Dashboard
 		else
 	    {
-		System.out.println("\nInvalid input. Returning to Dashboard.\n");
-		dashboard();
+			System.out.println("\nInvalid input. Returning to Dashboard.\n");
+			dashboard();
 	    }//Returns to Dashboard
 
     }//End of dashboard2()
@@ -567,7 +580,7 @@ public class Team {
     
     }//End of balancePrint()
     
-    public void payrollPrint() {
+    /*public void payrollPrint() {
     	System.out.println("Your payroll: " + myPayroll + "\n");
     	String pp = "\n";
     	pp += "1) Return to Dashboard\n";
@@ -585,7 +598,7 @@ public class Team {
 	    }//Returns to Dashboard
 		
     }//End of payroll()
-    
+    */
     public void dashboard3() { //Buy Gear, Equip Gear	
     	String db3 = "\n";
     	db3 += "1) Buy Gear\n";
@@ -615,7 +628,7 @@ public class Team {
     	}
     }//End of dashboard3()
     
-    public void dashboard4() { //Draft Players, Team Roster
+    /*public void dashboard4() { //Draft Players, Team Roster
     	String db4 = "\n";
     	db4 += "1) Draft Players\n";
     	//db4 += "2) Team Roster\n";
@@ -628,10 +641,10 @@ public class Team {
     		//Shop.openPlayerDraft();
     		return;
     	}
-    	/*if ( call.equals("2") ) 
+    	if ( call.equals("2") ) 
     	{
     		teamRoster();
-    	}*/
+    	}
     	if ( call.equals("2") )
 		{
 			System.out.println("\nReturning to Dashboard.\n");

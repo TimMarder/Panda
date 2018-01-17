@@ -1,10 +1,16 @@
 import cs1.Keyboard;
 
+
 public class Shop {
+    
+    
+
     private static String menu = "\n~~~~~~Shop~~~~~~~\n[1]Browse Helmets\n[2]Browse Cleats\n[3]Browse Pads\n[4]Exit Shop\n";
-    public static String[] helmets = {"Riddel ($x) +5 Team Rating", "Schutt ($x) +10 Team Rating", "Xenith ($x) +15 Team Rating"};
-    public static String[] pads = {"Under Armour ($x) +5 Team Rating", "Adidas ($x) +10 Team Rating", "Nike ($x) +15 Team Rating"};
-    public static String[] cleats = {"Alphas ($x) +5 Team Rating", "Highlights ($x) +10 Team Rating", "Untouchables ($x) +15 Team Rating"};
+    public static  String[] helmets = {"Riddel ($750) +5 Team Rating", "Schutt ($1500) +10 Team Rating", "Xenith ($2500) +15 Team Rating"};
+    public static String[] pads = {"Under Armour ($750) +5 Team Rating", "Adidas ($1500) +10 Team Rating", "Nike ($2500) +15 Team Rating"};
+    public static String[] cleats = {"Alphas ($750) +5 Team Rating", "Highlights ($1500) +10 Team Rating", "Untouchables ($2500) +15 Team Rating"};
+
+    
 
     public static String printArray(String[] s) {
 	String retStr = "";
@@ -47,7 +53,9 @@ public class Shop {
 	}
 	if (choice == 1) {
 	    updateTeamStats(5);
+	    
 	}
+	
 	if (choice == 2) {
 	    updateTeamStats(10);
 	}
