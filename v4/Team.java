@@ -455,11 +455,11 @@ public class Team {
     	
     	if( call.equals("4") ) {
 	    //dashboard4();
-	    return;
-    	}//Calls option 4
+	    //return;
+    	//}//Calls option 4
     	
     	/*if( call.equals("5") ) {
-	    dashboard5();
+	    */dashboard5();
 	    return;
     	}//Calls option 5
     	*/

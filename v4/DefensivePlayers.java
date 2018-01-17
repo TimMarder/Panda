@@ -24,7 +24,7 @@ public class DefensivePlayers extends Team {
     public void setDefensivePlayerStats() {
         // === [ Linebackers ] ===
         //Linebacker JonathanCasillas = new Linebacker("Jonathan Casillas", "Giants");
-        JonathanCasillas.setStats( 59, 68, 72 , 82 , 69 );
+        JonathanCasillas.setStats( 59 , 68 , 72 , 82 , 69 );
         JonathanCasillas.setPlayerRating();
 
         //Linebacker CurtisGrant = new Linebacker("Curtis Grant", "Giants");

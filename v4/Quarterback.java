@@ -20,6 +20,7 @@ public class Quarterback extends OffensivePlayers {
     public String toString() {
 	String retStr = "";
 	retStr += "[QB]" + name + "\n";
+	retStr += "PLAYER RATING < " + playerRating + " >\n";
 	retStr += "Agility: " + agility + "\n"; 
 	retStr += "Awareness: " + awareness + "\n";
 	retStr += "Arm Power: " + armPower + "\n";
