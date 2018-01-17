@@ -15,14 +15,11 @@ public class Quarterback extends OffensivePlayers {
 	super(qbname, qbteam);
     }
 
-    public void setName(String s) {
-	super(s);
-    }
+  
 
     public String toString() {
 	String retStr = "";
 	retStr += "[QB]" + name + "\n";
-	retStr += "PLAYER RATING < " + playerRating + " >\n";
 	retStr += "Agility: " + agility + "\n"; 
 	retStr += "Awareness: " + awareness + "\n";
 	retStr += "Arm Power: " + armPower + "\n";

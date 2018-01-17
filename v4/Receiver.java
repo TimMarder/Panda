@@ -18,7 +18,6 @@ public class Receiver extends OffensivePlayers{
     public String toString() {
 	String retStr = "";
 	retStr += "[WR]" + name + "\n";
-	retStr += "PLAYER RATING < " + playerRating + " >\n";
 	retStr += "Agility: " + agility + "\n"; 
 	retStr += "Awareness: " + awareness + "\n";
 	retStr += "Speed: " + speed + "\n";

@@ -18,7 +18,6 @@ public class Runningback extends OffensivePlayers {
     public String toString() {
 	String retStr = "";
 	retStr += "[RB]" + name + "\n";
-	retStr += "PLAYER RATING < " + playerRating + " >\n";
 	retStr += "Agility: " + agility + "\n"; 
 	retStr += "Awareness: " + awareness + "\n";
 	retStr += "Speed: " + speed + "\n";

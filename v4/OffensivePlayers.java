@@ -124,7 +124,7 @@ public class OffensivePlayers extends Team {
 
         
         //Receiver JulioJones = new Receiver("Julio Jones", "Falcons");
-        JulioJones.setStats( 68 , 69 , 67 , 70 , 76 );
+        JulioJones.setStats( 68 , 68 , 67 , 70 , 76 );
         JulioJones.setPlayerRating();
 
         //Receiver MohamedSanu = new Receiver("Mohamed Sanu", "Falcons");

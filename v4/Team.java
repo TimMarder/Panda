@@ -4,13 +4,15 @@ import cs1.Keyboard;
 public class Team {
     
     //~~~~~~~~INSTANCE VARIABLES~~~~~~~~
+
+    
     public String userName;  //the name of the user but will display as "Coach <name>".
     public String teamName;  //the team that the user chooses to coach.
     public String myPayroll;
     public static int teamRating;
     public int week;
     public int wins, losses;
-    public int balance;
+    public static int balance;
     public static Quarterback myQB;
     public static Receiver myWR1, myWR2, myWR3;
     public static Runningback myRB;
@@ -95,6 +97,7 @@ public class Team {
     	wins = 0;
     	losses = 0;
     	myPayroll = "";
+	balance = 1000;
     }//End of Team()
     
     public Team( String name , String team ) {
@@ -110,7 +113,7 @@ public class Team {
     public void addBalance( int i ) {
     	balance += i;
     }//End of addBalance()
-    public void subtractBalance( int i ) {
+    public static void subtractBalance( int i ) {
     	balance -= i;
     }//End of subtractBalance()
     
@@ -451,7 +454,7 @@ public class Team {
     	}//Calls option 3
     	
     	if( call.equals("4") ) {
-	    dashboard4();
+	    //dashboard4();
 	    return;
     	}//Calls option 4
     	

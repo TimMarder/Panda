@@ -18,7 +18,6 @@ public class Safety extends DefensivePlayers {
     public String toString() {
 	String retStr = "";
 	retStr += "[SS]" + name + "\n";
-	retStr += "PLAYER RATING < " + playerRating + " >\n";
 	retStr += "Catching: " + catching + "\n"; 
 	retStr += "Awareness: " + awareness + "\n";
 	retStr += "Speed: " + speed + "\n";
