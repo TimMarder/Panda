@@ -586,8 +586,8 @@ public class Team {
     public void dashboard3() { //Buy Gear, Equip Gear	
     	String db3 = "\n";
     	db3 += "1) Buy Gear\n";
-    	db3 += "2) Equip Gear\n";
-    	db3 += "3) Return to Dashboard\n";
+    	//db3 += "2) Equip Gear\n";
+    	db3 += "2) Return to Dashboard\n";
     	System.out.println(db3);
     	
     	String call = Keyboard.readString();
@@ -596,12 +596,12 @@ public class Team {
     		//Shop.openGearShop();
     		return;
     	}
-    	if ( call.equals("2") ) 
+    	/*if ( call.equals("2") ) 
     	{
     		//Shop.openCloset();
     		return;
-    	}
-    	if ( call.equals("3") )
+    	}*/
+    	if ( call.equals("2") )
 		{
 			System.out.println("\nReturning to Dashboard.\n");
 	        dashboard();
@@ -798,7 +798,7 @@ public class Team {
     }
     
     public static int setTeamRating(int i) {
-    	teamRating = i;
+    	teamRating = i; 
     }
 
     public void playGame() {

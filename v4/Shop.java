@@ -22,7 +22,7 @@ public class Shop {
 	
 					  
     
-    public static void shop(){
+    public static void openShop(){
 	System.out.println(menu);
 	int choice = Keyboard.readInt();
 	if (choice == 1) {
@@ -105,11 +105,11 @@ public class Shop {
     
     
     public static void main(String args[]) {
-	Team yo = new Team();
+	/*Team yo = new Team();
 	System.out.println(yo.teamRating);
 	    
 	shop();
 	System.out.println(yo.teamRating);
-	
+	*/
     }
 }
